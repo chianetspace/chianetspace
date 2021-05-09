@@ -32,6 +32,12 @@
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
+						<NuxtLink to="/faq" class="nav-link px-0">
+							<i class="bx bxs-book-content"></i>
+							FAQ
+						</NuxtLink>
+					</li>
+					<li class="nav-item mx-3">
 						<NuxtLink to="/about" class="nav-link px-0">
 							<i class="bx bxs-info-circle"></i>
 							About

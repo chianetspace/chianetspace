@@ -8,7 +8,7 @@
 				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br />Time historical netspace and price data.
 			</p>
 			<h3 class="mt-4">Chia Netspace Now:</h3>
-			<h2 class="display-1 text-success fw-bold">
+			<h2 class="display-1 mb-0 text-success fw-bold">
 <!--				v-anime="{textContent: [70000, 77000],-->
 <!--				round: 1,-->
 <!--				easing: 'linear',-->
@@ -17,6 +17,7 @@
 <!--				}"-->
 				3.17<sub v-text="this.counter"></sub> EiB
 			</h2>
+<!--			<p class="lead text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>-->
 			<div class="row mt-5 w-75">
 				<div class="col">
 					<div class="text-center">
