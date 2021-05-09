@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="inner d-flex justify-content-center flex-column align-items-center">
 			<h1 class="display-4">
-				Welcome to <strong class="fw-bold">Chia</strong>NetSpace.com
+				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
 			</h1>
 			<p class="lead text-center">
 				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br />Time historical netspace and price data.
@@ -19,39 +19,42 @@
 			</h2>
 <!--			<p class="lead text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>-->
 			<div class="row mt-5 w-75">
-				<div class="col">
+				<div class="col-lg-4">
 					<div class="text-center">
-						<h6>Daily High / Daily Low:</h6>
+						<h6 class="fw-bold">Daily High / Daily Low</h6>
 						$1400.57 / $1049.04
 					</div>
 				</div>
-				<div class="col text-center">
-					<h6>Last Update:</h6>
+				<div class="col-lg-4 text-center">
+					<h6 class="fw-bold">Last Update</h6>
 					2021-05-09 16:00:03
 				</div>
-				<div class="col text-end">
+				<div class="col-lg-4 text-end">
 					<div class="text-center">
-						<h6>Power Consumption:</h6>
+						<h6 class="fw-bold">Power Consumption</h6>
 						~ 4864 kW
 					</div>
 				</div>
 			</div>
+			<div class="row mt-4 w-75">
+				<div class="col-lg-4">
+					<div class="text-center">
+						<h6 class="fw-bold">All Time High</h6>
+						$1640.74
+					</div>
+				</div>
+				<div class="col-lg-4 text-center">
+					<h6 class="fw-bold">Chia (XCH) Price</h6>
+					$1185.44
+				</div>
+				<div class="col-lg-4 text-end">
+					<div class="text-center">
+						<h6 class="fw-bold">Daily Volume</h6>
+						Booming!
+					</div>
+				</div>
+			</div>
 		</div>
-		<!--		<div class="px-4 pt-5 my-5 text-center">-->
-		<!--			<h1 class="display-4 fw-bold">Welcome to ChiaGang.com</h1>-->
-		<!--			<div class="col-lg-6 mx-auto">-->
-		<!--				<p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>-->
-		<!--				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">-->
-		<!--					<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>-->
-		<!--					<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>-->
-		<!--				</div>-->
-		<!--			</div>-->
-		<!--			<div class="overflow-hidden" style="max-height: 30vh;">-->
-		<!--				<div class="container px-5">-->
-		<!--					<img src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-docs.png" class="img-fluid rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">-->
-		<!--				</div>-->
-		<!--			</div>-->
-		<!--		</div>-->
 	</div>
 </template>
 
@@ -82,6 +85,5 @@ export default {
 sub
 {
 	bottom: 0;
-	color: #baccc5;
 }
 </style>

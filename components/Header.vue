@@ -1,45 +1,45 @@
 <template>
-	<header class="navbar navbar-expand-lg bg-dark position-sticky top-0 navbar-dark">
+	<header :class="'navbar navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
 		<div class="container">
 			<NuxtLink to="/" class="navbar-brand h4 fw-normal mb-0">
-<!--				<i class="bx bxl-kubernetes"></i>-->
 				<i class="fas fa-leaf logo"></i>
 				<strong>Chia</strong>NetSpace<span class="">.com</span>
-<!--				<img src="https://demo.themenio.com/ico/images/logo-s2-white2x.png" class="logo" alt="logo" />-->
-<!--				<span class="badge bg-success">Beta</span>-->
+				<sup><span class="badge small text-uppercase text-success">Beta</span></sup>
 			</NuxtLink>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse ms-4 navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-0">
 					<li class="nav-item mx-3">
-						<NuxtLink to="/" class="nav-link px-0">
-							<i class="bx bxs-dashboard"></i>
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/">
+							<i class="bx bxs-dashboard me-1"></i>
 							Overview
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
-						<NuxtLink to="/news" class="nav-link px-0">
-							<i class="bx bxs-news"></i>
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/news">
+							<i class="bx bxs-news me-1"></i>
 							News
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
-						<NuxtLink to="/pricing" class="nav-link px-0">
-							<i class="bx bxs-server"></i>
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">
+							<i class="bx bxs-server me-1"></i>
 							Buy Plots
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
-						<NuxtLink to="/faq" class="nav-link px-0">
-							<i class="bx bxs-book-content"></i>
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/faq">
+							<i class="bx bxs-book-content me-1"></i>
 							FAQ
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
-						<NuxtLink to="/about" class="nav-link px-0">
-							<i class="bx bxs-info-circle"></i>
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
+							<i class="bx bxs-info-circle me-1"></i>
 							About
 						</NuxtLink>
 					</li>
@@ -58,7 +58,10 @@
 
 <script>
 export default {
-	name: "Header"
+	name: "Header",
+	props: {
+		shadow: false
+	}
 }
 </script>
 
@@ -67,32 +70,21 @@ header
 {
 	padding-top: 2.5rem;
 	padding-bottom: 2.1rem;
-	box-shadow: inset -10px 20px 30px #101927;
 	z-index: 9;
 }
 
-.badge.bg-success
-{
-	opacity: 0.7;
-	background-color: lightgreen !important;
-}
-
-i.bx
-{
-	vertical-align: bottom;
-	margin-bottom: 0.21rem;
+header.navbar-dark {
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 .nav-link
 {
-	color: #eeeeee !important;
 	font-size: 0.9em;
 }
 
 .nav-link {
 	display: inline-block;
 	position: relative;
-	color: #0087ca;
 }
 
 .nav-link:after {
@@ -108,7 +100,7 @@ i.bx
 	transition: transform 0.25s ease-out;
 }
 
-.nav-link.nuxt-link-exact-active:after,
+.nav-link.active:after,
 .nav-link:hover:after
 {
 	transform: scaleX(1);

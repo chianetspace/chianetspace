@@ -8,14 +8,15 @@
 		</div>
 		<div class="row">
 			<div v-for="article in articles" class="col-lg-4">
-				<article class="card shadow-lg mx-2">
+				<article class="card shadow border-0 mx-2">
 					<a :href="article.link" target="_blank">
 						<img class="card-img-top" :src="article.thumb" alt="Card thumb cap">
 					</a>
 					<div class="card-body">
 						<h4 class="card-title">{{ article.title }}</h4>
 						<p class="card-text">{{ article.tagline }}</p>
-						<a href="#" class="btn d-flex align-items-center justify-content-center btn-outline-secondary rounded-pill w-100">
+						<a href="#"
+						   class="btn d-flex align-items-center justify-content-center btn-outline-secondary rounded-pill w-100">
 							<i class="bx bxs-bookmark me-2"></i>
 							Read Article
 						</a>

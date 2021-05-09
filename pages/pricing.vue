@@ -15,13 +15,14 @@
 		</div>
 		<div class="row">
 			<div v-for="t in ['Plan 1', 'Plan 2', 'Plan 3']" class="col">
-				<div class="card mx-2 shadow-lg text-center">
+				<div class="card mx-2 shadow border-0 text-center">
 					<!--				<img src="..." class="card-img-top" alt="...">-->
 					<div class="card-body px-4 py-5">
 						<h5 class="card-title">{{ t }}</h5>
 						<h5 class="display-6 fw-bold my-3">$324,00</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-<!--						<a href="#" class="btn btn-primary">Go somewhere</a>-->
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<!--						<a href="#" class="btn btn-primary">Go somewhere</a>-->
 					</div>
 					<ul class="list-group small list-group-flush">
 						<li class="list-group-item text-start px-4">

@@ -1,24 +1,12 @@
+@import "~bootstrap/scss/functions";
+
 $body-bg: #141f34;
 $primary: #25c687;
 $body-color: #eeeeee;
 
-//$body-bg: #fafafa;
-
-$btn-link-color: #eeeeee;
-
-$link-color: #eeeeee;
-$link-hover-color: #ffffff;
-$nav-link-color: $primary;
-
-$alert-bg-scale:                -0%;
-$alert-border-scale:            0%;
-$alert-color-scale:             70%;
-
-$container-max-widths: (
-	xl: 1150px
-);
-
-@import "~bootstrap/scss/functions";
+// Light Theme
+//$body-bg: #ffffff;
+//$body-color: #2f495e;
 
 $theme-colors: (
 	"primary": $primary,
@@ -31,31 +19,56 @@ $theme-colors: (
 	//"dark": tint-color($body-bg, 5%),
 );
 
+$container-max-widths: (
+	xl: 1150px
+);
+
+$btn-link-color: #ffffff;
+
+$navbar-dark-color: rgba($body-color, .8);
+$navbar-dark-hover-color: $body-color;
+$navbar-dark-active-color: $body-color;
+
+$link-color: #ffffff;
+$link-hover-color: #ffffff;
+$nav-link-color: $primary;
+
+$alert-bg-scale: -0%;
+$alert-border-scale: 0%;
+$alert-color-scale: 70%;
+
+//$card-border-radius: 1.1rem;
+$card-bg: tint-color($body-bg, 5%);
+//$card-cap-bg: $body-bg;
+
 $list-group-bg: tint-color($body-bg, 5%);
-$list-group-color: #eeeeee;
+$list-group-color: $body-color;
 $list-group-border-color: tint-color($body-bg, 10%);
 
 @import "~bootstrap/scss/bootstrap";
 
-body
-{
+body {
+	border-top: 3px solid $primary;
 	//box-shadow: inset 0 0 7vh rgb(12 19 29 / 44%);
-	//box-shadow: inset -10px 20px 30px #101927;
+	box-shadow: inset -10px 20px 30px #0c141f;
 }
-.container-fluid
-{
+
+header {
+	background-color: $body-bg;
+}
+
+.container-fluid {
 	max-width: 77vw;
 }
 
-.logo
-{
+.logo {
 	color: $primary;
 	margin-right: 0.5rem;
 }
 
-.card
-{
-	background-color: tint-color(#141f34, 5%) !important;
+.card {
+	//#141f34
+	//background-color: tint-color($body-bg, 5%) !important;
 }
 
 .btn
@@ -65,7 +78,10 @@ body
 	//font-size: 80%;
 }
 
-.btn-primary
-{
+.btn-primary {
 	color: #eeeeee;
+}
+
+sub {
+	color: tint-color($primary, 50%);
 }
