@@ -1,0 +1,59 @@
+$body-bg: #141f34;
+$primary: #25c687;
+$body-color: #eeeeee;
+
+$btn-link-color: #eeeeee;
+
+$link-color: #eeeeee;
+$link-hover-color: #ffffff;
+$nav-link-color: $primary;
+
+$alert-bg-scale:                -0%;
+$alert-border-scale:            0%;
+$alert-color-scale:             70%;
+
+$container-max-widths: (
+	xl: 1150px
+);
+
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+	"primary": $primary,
+	"success": $primary,
+	//"light": #AAAAAA,
+	"muted": #97afd5,
+	"light": tint-color($body-bg, 10%),
+	"dark": $body-bg
+	//"dark": tint-color($body-bg, 5%),
+);
+
+$list-group-bg: tint-color($body-bg, 5%);
+$list-group-color: #eeeeee;
+$list-group-border-color: tint-color($body-bg, 10%);
+
+@import "~bootstrap/scss/bootstrap";
+
+body
+{
+	//box-shadow: inset 0 0 7vh rgb(12 19 29 / 44%);
+	//box-shadow: inset -10px 20px 30px #101927;
+}
+
+.logo
+{
+	color: $primary;
+	margin-right: 0.5rem;
+}
+
+.btn
+{
+	//text-transform: uppercase;
+	//font-weight: 400;
+	//font-size: 80%;
+}
+
+.btn-primary
+{
+	color: #eeeeee;
+}
