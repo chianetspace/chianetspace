@@ -1,4 +1,10 @@
 export default {
+	target: 'static',
+
+	generate: {
+		dir: 'public'
+	},
+
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
 		title: 'ChiaNetSpace.com | Chia (XCH) Cryptocurrency Netspace and Price Historical Data',
