@@ -45,6 +45,9 @@ $list-group-bg: tint-color($body-bg, 5%);
 $list-group-color: $body-color;
 $list-group-border-color: tint-color($body-bg, 10%);
 
+$accordion-border-color: tint-color($body-bg, 10%);
+$accordion-button-active-bg: $body-bg;
+
 @import "~bootstrap/scss/bootstrap";
 
 body {
