@@ -13,7 +13,7 @@
 						<h2 id="flush-headingOne" class="accordion-header">
 							<button aria-controls="flush-collapseOne" aria-expanded="false" class="accordion-button"
 									data-bs-target="#flush-collapseOne" data-bs-toggle="collapse" type="button">
-								Accordion Item #1
+								Question 1
 							</button>
 						</h2>
 						<div id="flush-collapseOne" aria-labelledby="flush-headingOne"
