@@ -66,7 +66,7 @@
 
 <script>
 export default {
-	name: "faq"
+	name: "frequently-asked-questions"
 }
 </script>
 

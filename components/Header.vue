@@ -32,7 +32,7 @@
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/faq">
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
 							<i class="bx bxs-book-content me-1"></i>
 							FAQ
 						</NuxtLink>
