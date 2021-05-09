@@ -15,32 +15,33 @@
 				<ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-0">
 					<li class="nav-item mx-3">
 						<NuxtLink to="/" class="nav-link px-0">
-<!--							<i class="bx bx-home"></i>-->
+							<i class="bx bxs-dashboard"></i>
 							Overview
-<!--							<i class="bx bx-chevron-down"></i>-->
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
 						<NuxtLink to="/news" class="nav-link px-0">
+							<i class="bx bxs-news"></i>
 							News
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
 						<NuxtLink to="/pricing" class="nav-link px-0">
-							Pricing
+							<i class="bx bxs-server"></i>
+							Buy Plots
 						</NuxtLink>
 					</li>
 					<li class="nav-item mx-3">
 						<NuxtLink to="/about" class="nav-link px-0">
+							<i class="bx bxs-info-circle"></i>
 							About
 						</NuxtLink>
 					</li>
 				</ul>
 			</div>
-			<button class="btn btn-secondary px-4 me-2">
-<!--				<i class="bx bx-log-in me-1"></i>-->
-				Get Started
-			</button>
+<!--			<button class="btn btn-secondary px-4 me-2">-->
+<!--				Get Started-->
+<!--			</button>-->
 			<button class="btn btn-primary px-4 rounded-pill">
 				<i class="bx bxs-cart me-1"></i>
 				Order a Plot
@@ -63,6 +64,7 @@ header
 	box-shadow: inset -10px 20px 30px #101927;
 	z-index: 9;
 }
+
 .badge.bg-success
 {
 	opacity: 0.7;
