@@ -2,6 +2,8 @@ $body-bg: #141f34;
 $primary: #25c687;
 $body-color: #eeeeee;
 
+//$body-bg: #fafafa;
+
 $btn-link-color: #eeeeee;
 
 $link-color: #eeeeee;
@@ -20,6 +22,7 @@ $container-max-widths: (
 
 $theme-colors: (
 	"primary": $primary,
+	"secondary": $body-color,
 	"success": $primary,
 	//"light": #AAAAAA,
 	"muted": #97afd5,
@@ -39,11 +42,20 @@ body
 	//box-shadow: inset 0 0 7vh rgb(12 19 29 / 44%);
 	//box-shadow: inset -10px 20px 30px #101927;
 }
+.container-fluid
+{
+	max-width: 77vw;
+}
 
 .logo
 {
 	color: $primary;
 	margin-right: 0.5rem;
+}
+
+.card
+{
+	background-color: tint-color(#141f34, 5%) !important;
 }
 
 .btn

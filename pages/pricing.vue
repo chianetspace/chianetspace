@@ -15,7 +15,7 @@
 		</div>
 		<div class="row">
 			<div v-for="t in ['Plan 1', 'Plan 2', 'Plan 3']" class="col">
-				<div class="card mx-2 shadow-lg bg-dark text-center">
+				<div class="card mx-2 shadow-lg text-center">
 					<!--				<img src="..." class="card-img-top" alt="...">-->
 					<div class="card-body px-4 py-5">
 						<h5 class="card-title">{{ t }}</h5>
@@ -75,15 +75,13 @@
 
 <script>
 export default {
-	name: "pricing"
+	name: "pricing",
+	async asyncData({ $axios }) {
+		const post = await $axios.$get('https://httpbin.org/ip')
+		return { post }
+	}
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~bootstrap/scss/functions';
-
-.card
-{
-	background-color: tint-color(#141f34, 5%) !important;
-}
+<style scoped>
 </style>
