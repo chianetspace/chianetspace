@@ -47,11 +47,15 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
+		'@nuxtjs/axios'
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
+	},
+	loading: {
+		color: '#25c687',
 	}
 }
