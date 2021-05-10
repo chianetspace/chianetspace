@@ -5,7 +5,7 @@
 				<h1 class="display-5">
 					Frequently Asked <strong class="fw-bold">Questions</strong>
 				</h1>
-				<p>test</p>
+				<p>test2</p>
 			</div>
 		</div>
 		<div class="row">
