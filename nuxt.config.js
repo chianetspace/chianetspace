@@ -63,10 +63,16 @@ export default {
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
 		'@nuxtjs/axios',
-		'@nuxtjs/sitemap'
+		'@nuxtjs/sitemap',
+		'@nuxtjs/robots',
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
+
+	robots: {
+		// UserAgent: '*',
+		// Disallow: '/plots'
+	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
