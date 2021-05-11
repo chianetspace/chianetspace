@@ -34,10 +34,19 @@ export default {
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [
+		'~/plugins/axios.js',
 		'~/plugins/bootstrap.js',
 		{src: '~/plugins/apexcharts.js', mode: 'client'}
 
 	],
+
+	env: {
+		baseUrl: process.env.BASE_URL || 'https://localhost:5001/',
+	},
+
+	axios: {
+		baseURL: process.env.BASE_URL || 'https://localhost:5001/'
+	},
 
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: true,
