@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<div class="row justify-content-center my-lg-5">
-			<div class="col-lg-8 text-center">
+		<div class="row my-lg-5 mb-4">
+			<div class="col-lg-8 offset-lg-2 offset-0 text-center">
 				<h1 class="display-4">About <strong class="fw-bold">Chia</strong>NetSpace.com</h1>
 				<p class="h4">Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>
 					Time historical netspace and price data.</p>
