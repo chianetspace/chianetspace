@@ -1,6 +1,6 @@
 <template>
 	<header :class="'navbar navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
-		<div class="container-fluid">
+		<div class="container">
 			<NuxtLink class="navbar-brand w-25 h4 me-auto fw-normal mb-0" to="/">
 				<i class="fas fa-leaf logo"></i>
 				<strong>Chia</strong>NetSpace<span class="">.com</span>
@@ -37,12 +37,12 @@
 					<!--							Buy Plots-->
 					<!--						</NuxtLink>-->
 					<!--					</li>-->
-					<li class="nav-item">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
-							<i class="bx bxs-book-content me-1"></i>
-							Frequently Asked Questions
-						</NuxtLink>
-					</li>
+					<!--					<li class="nav-item">-->
+					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">-->
+					<!--							<i class="bx bxs-book-content me-1"></i>-->
+					<!--							Frequently Asked Questions-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
 					<li class="nav-item">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
