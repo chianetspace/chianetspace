@@ -14,6 +14,7 @@ $theme-colors: (
 	"success": $primary,
 	"danger": #c62553,
 	"muted": #97afd5,
+	"white": #ffffff,
 	"light": tint-color($body-bg, 10%),
 	"dark": $body-bg
 );
@@ -70,7 +71,7 @@ $input-border-width: 0;
 @import "~bootstrap/scss/bootstrap";
 
 body {
-	//border-top: 3px solid $primary;
+	border-top: 3px solid $primary;
 	//box-shadow: inset 0 0 7vh rgb(12 19 29 / 44%);
 	//box-shadow: inset -10px 20px 30px #0c141f;
 }
@@ -83,8 +84,16 @@ header {
 	box-shadow: 0 1rem 2rem shade-color($body-bg, 10%);
 }
 
-.container-fluid {
-	max-width: 77vw;
+@media (min-width: 1200px) {
+	.container-fluid {
+		max-width: 95vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-fluid {
+		max-width: 77vw;
+	}
 }
 
 .logo {
@@ -107,8 +116,11 @@ header {
 	//background-color: tint-color($body-bg, 5%) !important;
 }
 
-.btn
-{
+.btn-white {
+	color: black;
+}
+
+.btn {
 	//text-transform: uppercase;
 	//font-weight: 400;
 	//font-size: 80%;
@@ -120,4 +132,14 @@ header {
 
 sub {
 	color: tint-color($primary, 0%);
+}
+
+sup {
+	font-size: 0.5em;
+	top: -1em;
+}
+
+i.bx {
+	vertical-align: bottom;
+	margin-bottom: 3px;
 }
