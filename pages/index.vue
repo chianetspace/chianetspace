@@ -10,7 +10,7 @@
 				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netspace and
 				price data.
 			</p>
-			<h3 class="mt-4">Chia Net Space Now:</h3>
+			<h3 class="mt-4 mb-1">Chia Net Space Now:</h3>
 			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
 				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0) }}<sub>.<span
@@ -21,8 +21,22 @@
 				round: 1,
 				}"></span></sub>
 				{{ summary.netSpace.largestWholeNumberBinarySymbol }}
+				<!--				<sup class="text-white">+38%</sup>-->
 			</h2>
-			<div class="row mt-5 mb-4">
+			<div class="mt-4">
+				<button class="btn btn-lg mx-2 px-4 btn-primary rounded-pill" data-bs-target="#order-modal"
+						data-bs-toggle="modal">
+					<i class="bx bxs-cart me-1"></i>
+					Order Plots Now
+					<!--					<i class="bx bxs-paper-plane me-1"></i>-->
+					<!--					Get More Stats-->
+				</button>
+				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
+					<i class="bx bxl-discord"></i>
+					Join Discord
+				</a>
+			</div>
+			<div class="row mt-5 small">
 				<div class="col-lg-10 offset-lg-1">
 					<div class="row">
 						<div class="col-lg-4 col-6 text-center mb-4">
