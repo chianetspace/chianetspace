@@ -12,6 +12,7 @@
 				price data.
 			</p>
 			<h3 class="mt-4">Chia Net Space Now:</h3>
+			{{ summary }}
 			<h2 class="display-1 mb-0 text-success fw-bold">
 				{{ summary.NetSpace.LargestWholeNumberDecimalValue.toFixed(0) }}<sub>.<span
 				v-anime="{textContent: [0, getDecimals(summary.NetSpace.LargestWholeNumberDecimalValue)],
@@ -158,9 +159,6 @@ export default {
 	async asyncData({$axios}) {
 		const summary = await $axios.$get('data/summary')
 		return {summary}
-	},
-	created() {
-		setInterval(() => this.counter++, 777);
 	},
 	mounted() {
 		this.$axios.$get('charts/net-space-growth').then((data) => {
