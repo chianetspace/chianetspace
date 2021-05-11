@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="row my-5">
+		<div class="row my-lg-5 mb-4">
 			<div class="col text-center">
 				<h1 class="display-5">
 					Frequently Asked <strong class="fw-bold">Questions</strong>
@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-8 offset-2">
+			<div class="col-lg-8 offset-lg-2">
 				<div
 					id="accordionFlushExample"
 					class="accordion accordion-flush"
