@@ -55,6 +55,9 @@ export default {
 	buildModules: [
 		'nuxt-animejs',
 		'@nuxtjs/moment',
+		['@nuxtjs/google-analytics', {
+			id: 'G-F6WQ5SR60J'
+		}]
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
