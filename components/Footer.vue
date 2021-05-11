@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer mt-auto py-4">
 		<div class="container small text-uppercase">
-			<div class="row">
+			<div v-if="this.$route.name !== 'index'" class="row">
 				<!--				<div class="col-4">-->
 				<!--					<div class="px-2">-->
 				<!--						<button class="btn btn-light d-flex align-items-center btn-sm px-3 rounded-pill">-->
