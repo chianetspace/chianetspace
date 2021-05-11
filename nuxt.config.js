@@ -21,7 +21,7 @@ export default {
 			{name: 'twitter:image:src', content: 'https://chianetspace.com/preview.png'},
 			{name: 'twitter:card', content: 'summary_large_image'},
 			{name: 'og:image', content: 'https://chianetspace.com/preview.png'},
-			{name: 'theme-color', content: '#141f34'},
+			{name: 'theme-color', content: '#25c687'},
 			{
 				hid: 'description',
 				name: 'description',
