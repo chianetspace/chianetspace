@@ -26,8 +26,8 @@
 			<div class="mt-4">
 				<button class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" data-bs-target="#order-modal"
 						data-bs-toggle="modal">
-					<i class="bx bxs-cart me-1"></i>
-					Order Plots Now
+					<i class="bx bxs-basket me-1"></i>
+					Plots Pre-Sales
 					<!--					<i class="bx bxs-paper-plane me-1"></i>-->
 					<!--					Get More Stats-->
 				</button>
