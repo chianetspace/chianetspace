@@ -16,13 +16,17 @@
 				<div class="modal-body px-4 py-0">
 					<p class="small">We are preparing to launch the sale of plots, if you are interested then you can
 						fill in your email address.</p>
-					<div class="mb-3">
+					<div v-if="!this.isApplied" class="mb-3">
 						<label class="form-label" for="emailAddress">Email address</label>
 						<input id="emailAddress" v-model="emailAddress" class="form-control form-control-lg" required
 							   placeholder="Enter your email address" type="email">
 						<div id="emailPrivacy" class="form-text"><i class="bx bxs-lock"></i> Your email will not be sold
 							to any third-party.
 						</div>
+					</div>
+					<div v-else class="text-center">
+						<h3>Thank You!</h3>
+						<p>We will contact you as soon as possible.</p>
 					</div>
 					<div class="d-flex justify-content-evenly">
 						<a class="d-flex justify-content-center text-inherit text-muted flex-column mb-3 align-items-center"
@@ -39,7 +43,7 @@
 				</div>
 				<div class="modal-footer pt-2 p-4">
 					<button class="btn btn-secondary flex-grow-1" data-bs-dismiss="modal" type="button">Close</button>
-					<button class="btn btn-primary flex-grow-1" type="submit">
+					<button :disabled="this.isApplied" class="btn btn-primary flex-grow-1" type="submit">
 						<i class="bx bxs-basket me-1"></i>
 						Apply for Pre-Sale
 					</button>
