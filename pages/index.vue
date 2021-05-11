@@ -14,8 +14,8 @@
 			<h3 class="mt-4">Chia Net Space Now:</h3>
 			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
-				{{ summary.netSpace.largestWholeNumberDecimalValue.toFixed(0) }}<sub>.<span
-				v-anime="{textContent: [0, getDecimals(summary.netSpace.largestWholeNumberDecimalValue)],
+				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0) }}<sub>.<span
+				v-anime="{textContent: [0, getDecimals(summary.netSpace.largestWholeNumberBinaryValue)],
 				round: 1,
 				easing: 'linear',
 				// duration: 2100,
@@ -75,9 +75,10 @@
 							{{
 								summary.dailyVolume.toLocaleString('en-US', {
 									style: 'currency',
-									currency: 'USD'
+									currency: 'USD',
+									minimumFractionDigits: 0
 								})
-							}} XCH
+							}}
 						</div>
 					</div>
 				</div>
