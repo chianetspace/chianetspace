@@ -17,7 +17,7 @@ export default {
 		},
 		meta: [
 			{charset: 'utf-8'},
-			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1; user-scalable=no'},
 			{name: 'twitter:image:src', content: 'https://chianetspace.com/preview.png'},
 			{name: 'twitter:card', content: 'summary_large_image'},
 			{name: 'og:image', content: 'https://chianetspace.com/preview.png'},
