@@ -1,5 +1,13 @@
 {
-	"name": "chia-plots",
+	"name": "chianetspace.com",
+	"description": "Dive into statistics and graphs of Chia (XCH) Proof of Space and  Time historical netSpace and price data.",
+	"keywords": [
+		"chia",
+		"chia.net",
+		"chianet",
+		"xch",
+		"cryptocurrency"
+	],
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
