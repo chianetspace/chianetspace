@@ -1,8 +1,11 @@
 <template>
-	<div id="order-modal" class="modal fade" tabindex="-1">
+	<div id="order-modal" class="modal -fade" tabindex="-1">
+		<div v-if="isApplied" class="pyro">
+			<div class="before"></div>
+			<div class="after"></div>
+		</div>
 		<div class="modal-dialog modal-dialog-centered">
-			w
-			<div class="modal-content" data-submit.prevent="apply">
+			<form class="modal-content" @submit.prevent="apply">
 				<div class="modal-header d-block text-center" style="padding: 30px 0 23px;">
 					<h4>
 						<i class="fas fa-leaf logo"></i>
@@ -15,7 +18,7 @@
 						fill in your email address.</p>
 					<div class="mb-3">
 						<label class="form-label" for="emailAddress">Email address</label>
-						<input id="emailAddress" v-model="email" class="form-control form-control-lg"
+						<input id="emailAddress" v-model="emailAddress" class="form-control form-control-lg" required
 							   placeholder="Enter your email address" type="email">
 						<div id="emailPrivacy" class="form-text"><i class="bx bxs-lock"></i> Your email will not be sold
 							to any third-party.
@@ -41,7 +44,7 @@
 						Apply for Pre-Sale
 					</button>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 </template>
@@ -51,13 +54,14 @@ export default {
 	name: "NewsletterModal",
 	data() {
 		return {
-			email: null
+			isApplied: false,
+			emailAddress: null
 		}
 	},
 	methods: {
 		apply: function () {
-			this.$axios.post(`newsletter/apply?email=${this.email}`).then(() => {
-				console.log("YAHOU");
+			this.$axios.post(`newsletter/apply?email=${this.emailAddress}`).then(() => {
+				this.isApplied = true;
 			});
 		}
 	}
