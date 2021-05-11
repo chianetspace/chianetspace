@@ -13,8 +13,8 @@ $theme-colors: (
 	"secondary": $body-color,
 	"success": $primary,
 	"danger": #c62553,
-	"muted": #97afd5,
 	"white": #ffffff,
+	"muted": #97afd5,
 	"light": tint-color($body-bg, 10%),
 	"dark": $body-bg
 );
@@ -52,7 +52,7 @@ $modal-md: 400px;
 $modal-content-color: $body-color;
 $btn-close-color: $body-color;
 $modal-content-bg: tint-color($body-bg, 5%);
-//$modal-content-border-radius:       1rem;
+//$modal-content-border-radius:       .7rem;
 $modal-content-box-shadow-xs: 0 1rem 3rem #ff0000;
 $modal-content-box-shadow-sm-up: 0 1rem 3rem #ff0000;
 $modal-header-border-color: transparent;
@@ -96,6 +96,15 @@ header {
 	}
 }
 
+i.bx {
+	vertical-align: bottom;
+	margin-bottom: 3px;
+}
+
+.btn:not(.btn-link) i.bx {
+	margin-bottom: 6px;
+}
+
 .logo {
 	color: $primary;
 	margin-right: 0.5rem;
@@ -106,7 +115,7 @@ header {
 	//color: tint-color($body-color, 30%) !important;
 }
 
-.text-inherit {
+.text-inherit, .text-inherit * {
 	text-decoration: inherit;
 	color: inherit;
 }
@@ -139,7 +148,4 @@ sup {
 	top: -1em;
 }
 
-i.bx {
-	vertical-align: bottom;
-	margin-bottom: 3px;
-}
+@import 'fireworks';

@@ -1,12 +1,16 @@
 <template>
-	<div class="d-flex flex-column vh-100">
-		<Header :shadow="this.shadow"/>
-		<main role="main" class="flex-shrink-0 mb-3">
-			<div class="container">
-				<Nuxt/>
-			</div>
-		</main>
-		<Footer/>
+	<div>
+		<NewsletterModal/>
+		<div id="layout-wrapper" :class="'d-flex flex-column vh-100 ' + (this.blurred ? 'blurred' : '')">
+			<Header :shadow="this.shadow"/>
+			<main :class="'flex-shrink-0 ' + (this.$route.name !== 'frequently-asked-questions' ? 'flex-centered' : '')"
+				  role="main">
+				<div class="container">
+					<Nuxt/>
+				</div>
+			</main>
+			<Footer/>
+		</div>
 	</div>
 </template>
 
@@ -14,17 +18,20 @@
 export default {
 	data() {
 		return {
-			shadow: false
+			shadow: false,
+			blurred: false
 		}
 	},
 	methods: {
-		handleScroll() {
-			// Your scroll handling here
-			// console.log(window.scrollY)
+		handleScroll: function () {
 			this.shadow = window.scrollY !== 0;
 		}
 	},
 	mounted() {
+		let orderModal = document.getElementById('order-modal');
+		orderModal.addEventListener('show.bs.modal', _ => this.blurred = true);
+		orderModal.addEventListener('hide.bs.modal', _ => this.blurred = false);
+
 		(function (h, o, t, j, a, r) {
 			h.hj = h.hj || function () {
 				(h.hj.q = h.hj.q || []).push(arguments)
@@ -51,6 +58,11 @@ export default {
 	--grid-color: rgba(255, 255, 255, 0.01);
 }
 
+#layout-wrapper.blurred {
+	filter: blur(5px);
+	min-height: 100vh;
+}
+
 body, header {
 	//background-image: linear-gradient(var(--grid-color) 0.1em, transparent 0.1em), linear-gradient(90deg, var(--grid-color) 0.1em, transparent 0.1em);
 	//background-size: 3em 3em;
@@ -59,7 +71,10 @@ body, header {
 
 main {
 	display: flex;
-	flex-grow: 1;
 	align-items: center;
+}
+
+main.flex-centered {
+	flex-grow: 1;
 }
 </style>
