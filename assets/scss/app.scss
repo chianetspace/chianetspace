@@ -15,6 +15,7 @@ $theme-colors: (
 	"danger": #c62553,
 	"white": #ffffff,
 	"muted": #97afd5,
+	"white": #ffffff,
 	"light": tint-color($body-bg, 10%),
 	"dark": $body-bg
 );
@@ -84,8 +85,16 @@ header {
 	box-shadow: 0 1rem 2rem shade-color($body-bg, 10%);
 }
 
-.container-fluid {
-	max-width: 77vw;
+@media (min-width: 1200px) {
+	.container-fluid {
+		max-width: 95vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-fluid {
+		max-width: 77vw;
+	}
 }
 
 i.bx {
@@ -117,8 +126,11 @@ i.bx {
 	//background-color: tint-color($body-bg, 5%) !important;
 }
 
-.btn
-{
+.btn-white {
+	color: black;
+}
+
+.btn {
 	//text-transform: uppercase;
 	//font-weight: 400;
 	//font-size: 80%;
@@ -130,6 +142,11 @@ i.bx {
 
 sub {
 	color: tint-color($primary, 0%);
+}
+
+sup {
+	font-size: 0.5em;
+	top: -1em;
 }
 
 @import 'fireworks';
