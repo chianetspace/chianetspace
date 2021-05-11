@@ -80,6 +80,10 @@ export default {
 		// https://go.nuxtjs.dev/bootstrap
 	],
 
+	sitemap: {
+		hostname: 'https://chianetspace.com'
+	},
+
 	pwa: {
 		manifest: {
 			name: 'ChiaNetSpace.com',
