@@ -1,7 +1,7 @@
 <template>
 	<header :class="'navbar navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
-		<div class="container">
-			<NuxtLink to="/" class="navbar-brand h4 fw-normal mb-0">
+		<div class="container-fluid">
+			<NuxtLink class="navbar-brand w-25 h4 me-auto fw-normal mb-0" to="/">
 				<i class="fas fa-leaf logo"></i>
 				<strong>Chia</strong>NetSpace<span class="">.com</span>
 				<sup><span class="badge small text-uppercase text-success">Beta</span></sup>
@@ -11,33 +11,39 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse ms-4 navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-0">
-					<li class="nav-item mx-3">
+			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-center">
+				<ul class="navbar-nav text-uppercase mb-2 mb-lg-0">
+					<li class="nav-item">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/">
 							<i class="bx bxs-dashboard me-1"></i>
 							Overview
 						</NuxtLink>
 					</li>
-					<li class="nav-item mx-3">
+					<li class="nav-item">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/news">
 							<i class="bx bxs-news me-1"></i>
 							News
 						</NuxtLink>
 					</li>
-					<li class="nav-item mx-3">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">
-							<i class="bx bxs-server me-1"></i>
-							Buy Plots
-						</NuxtLink>
-					</li>
-					<li class="nav-item mx-3">
+					<!--					<li class="nav-item">-->
+					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">-->
+					<!--							<i class="bx bxs-pie-chart-alt me-1"></i>-->
+					<!--							Statistics-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
+					<!--					<li class="nav-item">-->
+					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">-->
+					<!--							<i class="bx bxs-server me-1"></i>-->
+					<!--							Buy Plots-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
+					<li class="nav-item">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
 							<i class="bx bxs-book-content me-1"></i>
-							FAQ
+							Frequently Asked Questions
 						</NuxtLink>
 					</li>
-					<li class="nav-item mx-3">
+					<li class="nav-item">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
 							About
@@ -45,13 +51,19 @@
 					</li>
 				</ul>
 			</div>
-<!--			<button class="btn btn-secondary px-4 me-2">-->
-<!--				Get Started-->
-<!--			</button>-->
-			<button class="btn btn-primary px-4 rounded-pill">
-				<i class="bx bxs-cart me-1"></i>
-				Order a Plot
-			</button>
+			<!--			<button class="btn btn-secondary px-4 me-2">-->
+			<!--				Get Started-->
+			<!--			</button>-->
+			<div class="w-25 text-end">
+				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="mailto:contact@chianetspace.com">
+					<i class="bx bxs-paper-plane me-1"></i>
+					Contact Us
+				</a>
+				<!--				<button data-bs-toggle="modal" data-bs-target="#signup-modal" class="btn btn-primary ms-auto px-4 rounded-pill">-->
+				<!--					<i class="bx bxs-cart me-1"></i>-->
+				<!--					Order a Plot-->
+				<!--				</button>-->
+			</div>
 		</div>
 	</header>
 </template>
@@ -85,6 +97,7 @@ header.navbar-dark {
 .nav-link {
 	display: inline-block;
 	position: relative;
+	margin: 0 12px;
 }
 
 .nav-link:after {
