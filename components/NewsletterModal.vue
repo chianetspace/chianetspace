@@ -1,5 +1,5 @@
 <template>
-	<div id="order-modal" class="modal fade" tabindex="-1">
+	<div id="order-modal" class="modal " tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
 			w
 			<div class="modal-content" data-submit.prevent="apply">
