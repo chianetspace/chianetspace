@@ -87,6 +87,8 @@ export default {
 	},
 
 	pwa: {
+		twitterCard: 'summary_large_image',
+		twitterCreator: '@clint_network',
 		author: 'Clint.Network',
 		manifest: {
 			name: 'ChiaNetSpace.com',
