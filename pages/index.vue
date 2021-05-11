@@ -8,7 +8,7 @@
 				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
 			</h1>
 			<p class="lead text-center">
-				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netSpace and
+				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netspace and
 				price data.
 			</p>
 			<h3 class="mt-4">Chia Net Space Now:</h3>
