@@ -5,7 +5,7 @@
 				   style="z-index: 99" type="area"></apexchart>
 		<div class="container text-center pb-5">
 			<h1 class="display-4">
-				Welcome to <strong class="fw-bold">Chia</strong>netSpace<span>.com</span>
+				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
 			</h1>
 			<p class="lead text-center">
 				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netSpace and

@@ -16,9 +16,22 @@ export default {
 			class: 'd-flex flex-column h-100'
 		},
 		meta: [
-			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: '' }
+			{charset: 'utf-8'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{name: 'twitter:image:src', content: 'https://chianetspace.com/preview.png'},
+			{name: 'twitter:card', content: 'summary_large_image'},
+			{name: 'og:image', content: 'https://chianetspace.com/preview.png'},
+			{name: 'theme-color', content: '#25c687'},
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Dive into statistics and graphs of Chia (XCH) Proof of Space and  Time historical netSpace and price data.'
+			},
+			{
+				hid: 'keywords',
+				name: 'keywords',
+				content: 'chia,chianet,xch,cryptocurrency,hard drive,smart transactions,'
+			}
 		],
 		link: [
 			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
@@ -55,14 +68,42 @@ export default {
 	buildModules: [
 		'nuxt-animejs',
 		'@nuxtjs/moment',
+		'@nuxtjs/pwa',
+		['@nuxtjs/google-analytics', {
+			id: 'G-F6WQ5SR60J'
+		}]
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
-		'@nuxtjs/axios'
+		'@nuxtjs/axios',
+		'@nuxtjs/sitemap',
+		'@nuxtjs/robots',
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
+
+	sitemap: {
+		hostname: 'https://chianetspace.com'
+	},
+
+	pwa: {
+		twitterCard: 'summary_large_image',
+		twitterCreator: '@clint_network',
+		author: 'Clint.Network',
+		manifest: {
+			name: 'ChiaNetSpace.com',
+			lang: 'en',
+			background_color: "#141f34",
+			theme_color: "#141f34",
+			useWebmanifestExtension: false
+		}
+	},
+
+	robots: {
+		UserAgent: '*',
+		Disallow: '/admin'
+	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
