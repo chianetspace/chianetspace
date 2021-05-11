@@ -89,7 +89,7 @@ export default {
 			name: 'ChiaNetSpace.com',
 			lang: 'en',
 			background_color: "#141f34",
-			theme_color: "#25c687",
+			theme_color: "#141f34",
 			useWebmanifestExtension: false
 		}
 	},
