@@ -8,12 +8,13 @@
 				<p class="lead mt-5">
 					Support further development of chianetspace.com by donation to this address:
 				</p>
-				<h5 class="mb-5">
-					<a class="text-primary"
-					   href="https://www.chiaexplorer.com/blockchain/address/xch1ml9yg7cl96457zsh4p2p2ar8qnwdd83td3qq69l45et7dgwyumtsyh0mx7"
-					   target="_blank">
-						xch1ml9yg7cl96457zsh4p2p2ar8qnwdd83td3qq69l45et7dgwyumtsyh0mx7
-					</a>
+				<h5 class="mb-5 text-primary">
+					xch1ml9yg7cl96457zsh4p2p2ar8qnwdd83td3qq69l45et7dgwyumtsyh0mx7
+					<!--					<a class="text-primary"-->
+					<!--					   href="https://www.chiaexplorer.com/blockchain/address/xch1ml9yg7cl96457zsh4p2p2ar8qnwdd83td3qq69l45et7dgwyumtsyh0mx7"-->
+					<!--					   target="_blank">-->
+					<!--						-->
+					<!--					</a>-->
 				</h5>
 				<p>This project was not created by official Chia team. Purpose of chianetspace.com is to monitor changes
 					and growth of chia proof of space blockchain netspace.</p>
