@@ -16,9 +16,10 @@ export default {
 			class: 'd-flex flex-column h-100'
 		},
 		meta: [
-			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: '' }
+			{charset: 'utf-8'},
+			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
+			{name: 'theme-color', content: '#4285f4'},
+			{hid: 'description', name: 'description', content: ''}
 		],
 		link: [
 			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
