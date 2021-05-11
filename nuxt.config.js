@@ -62,7 +62,8 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
-		'@nuxtjs/axios'
+		'@nuxtjs/axios',
+		'@nuxtjs/sitemap'
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
