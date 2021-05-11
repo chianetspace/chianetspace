@@ -24,9 +24,9 @@
 				{{ summary.netSpace.largestWholeNumberBinarySymbol }}
 			</h2>
 			<div class="row mt-5 mb-4">
-				<div class="col-10 offset-1">
+				<div class="col-lg-10 offset-lg-1">
 					<div class="row">
-						<div class="col text-center">
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Daily High / Daily Low</h6>
 							{{
 								summary.dailyHigh.toLocaleString('en-US', {
@@ -42,17 +42,17 @@
 								})
 							}}
 						</div>
-						<div class="col text-center">
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Last Update</h6>
 							{{ $moment(summary.lastUpdateDate).format('LLL') }}
 						</div>
-						<div class="col text-center">
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Power Consumption</h6>
 							≈ {{ (summary.netSpace.largestWholeNumberBinaryValue * 1.5).toFixed(0) }} kW
 						</div>
-					</div>
-					<div class="row mt-4">
-						<div class="col text-center">
+						<!--					</div>-->
+						<!--					<div class="row mt-4">-->
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">All Time High</h6>
 							{{
 								summary.allTimeHigh.toLocaleString('en-US', {
@@ -61,7 +61,7 @@
 								})
 							}}
 						</div>
-						<div class="col text-center">
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Chia (XCH) Price</h6>
 							{{
 								summary.chiaPrice.toLocaleString('en-US', {
@@ -70,7 +70,7 @@
 								})
 							}}
 						</div>
-						<div class="col text-center">
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Daily Volume</h6>
 							{{
 								summary.dailyVolume.toLocaleString('en-US', {
@@ -178,13 +178,19 @@ export default {
 
 <style scoped>
 #apexchart {
-	z-index: 1;
+	z-index: -1;
 	user-select: none;
 	pointer-events: none;
 }
 
 .display-1 {
 	font-size: 6rem;
+}
+
+@media (max-width: 992px) {
+	.display-1 {
+		font-size: 3rem !important;
+	}
 }
 
 sub {
