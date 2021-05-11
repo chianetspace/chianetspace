@@ -89,9 +89,11 @@ header {
 	z-index: 9;
 }
 
-.py-lg-5 {
-	padding-top: 2.5rem !important;
-	padding-bottom: 2.1rem !important;
+@media (min-width: 992px) {
+	.py-lg-5 {
+		padding-top: 2.5rem !important;
+		padding-bottom: 2.1rem !important;
+	}
 }
 
 header.navbar-dark {
