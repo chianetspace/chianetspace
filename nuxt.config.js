@@ -65,6 +65,7 @@ export default {
 	buildModules: [
 		'nuxt-animejs',
 		'@nuxtjs/moment',
+		'@nuxtjs/pwa',
 		['@nuxtjs/google-analytics', {
 			id: 'G-F6WQ5SR60J'
 		}]
@@ -78,6 +79,16 @@ export default {
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
+
+	pwa: {
+		manifest: {
+			name: 'ChiaNetSpace.com',
+			lang: 'en',
+			background_color: "#141f34",
+			theme_color: "#25c687",
+			useWebmanifestExtension: false
+		}
+	},
 
 	robots: {
 		// UserAgent: '*',
