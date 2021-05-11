@@ -18,7 +18,7 @@ export default {
 		meta: [
 			{charset: 'utf-8'},
 			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
-			{name: 'theme-color', content: '#4285f4'},
+			{name: 'theme-color', content: '#141f34'},
 			{
 				hid: 'description',
 				name: 'description',
@@ -89,7 +89,7 @@ export default {
 			name: 'ChiaNetSpace.com',
 			lang: 'en',
 			background_color: "#141f34",
-			theme_color: "#25c687",
+			theme_color: "#141f34",
 			useWebmanifestExtension: false
 		}
 	},
