@@ -34,15 +34,27 @@ export default {
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [
-		'~/plugins/bootstrap.js'
+		'~/plugins/axios.js',
+		'~/plugins/bootstrap.js',
+		{src: '~/plugins/apexcharts.js', mode: 'client'}
+
 	],
+
+	env: {
+		baseUrl: process.env.BASE_URL || 'https://localhost:5001/',
+	},
+
+	axios: {
+		baseURL: process.env.BASE_URL || 'https://localhost:5001/'
+	},
 
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: true,
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
-		'nuxt-animejs'
+		'nuxt-animejs',
+		'@nuxtjs/moment',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
@@ -54,7 +66,9 @@ export default {
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
+		vendor: ['vue-apexchart'],
 	},
+
 	loading: {
 		color: '#25c687',
 	}

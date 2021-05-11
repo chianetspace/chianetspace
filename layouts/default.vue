@@ -56,4 +56,10 @@ body, header {
 	//background-size: 3em 3em;
 	//box-shadow: inset -10px 20px 30px #101927;
 }
+
+main {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+}
 </style>

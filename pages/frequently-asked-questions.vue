@@ -16,16 +16,9 @@
 				>
 					<div class="accordion-item">
 						<h2 id="flush-headingOne" class="accordion-header">
-							<button
-								aria-controls="flush-collapseOne"
-								aria-expanded="false"
-								class="accordion-button"
-								data-bs-target="#flush-collapseOne"
-								data-bs-toggle="collapse"
-								type="button"
-							>
-								Where should you find your "Chia Farmer Key" and
-								"Chia Pool Key"?
+							<button aria-controls="flush-collapseOne" aria-expanded="false" class="accordion-button"
+									data-bs-target="#flush-collapseOne" data-bs-toggle="collapse" type="button">
+								test
 							</button>
 						</h2>
 						<div
