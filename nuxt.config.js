@@ -95,8 +95,8 @@ export default {
 	},
 
 	robots: {
-		// UserAgent: '*',
-		// Disallow: '/plots'
+		UserAgent: '*',
+		Disallow: '/admin'
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
