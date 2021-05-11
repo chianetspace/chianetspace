@@ -22,6 +22,8 @@ export default {
 			{name: 'twitter:card', content: 'summary_large_image'},
 			{name: 'og:image', content: 'https://chianetspace.com/preview.png'},
 			{name: 'theme-color', content: '#25c687'},
+			{name: 'msapplication-navbutton-color', content: '#25c687'},
+			{name: 'apple-mobile-web-app-status-bar-style', content: '#25c687'},
 			{
 				hid: 'description',
 				name: 'description',
