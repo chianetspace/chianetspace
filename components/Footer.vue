@@ -10,7 +10,7 @@
 				<!--						</button>-->
 				<!--					</div>-->
 				<!--				</div>-->
-				<div class="col d-flex justify-content-center align-items-center">
+				<div class="col d-flex text-center justify-content-center align-items-center">
 					<p class="mb-0">Copyright &copy; {{ new Date().getFullYear() }} ChiaNetSpace.com - Crafted with ❤️
 						by Ug &amp; ApexDev &amp; Clint.network -
 						<i class="bx bxl-github ms-1"></i>

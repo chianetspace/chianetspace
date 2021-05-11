@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<div class="row my-5">
+		<div class="row my-lg-5 mb-4">
 			<div class="col text-center">
-				<h1 class="display-5">Latest <strong class="fw-bold">News</strong></h1>
+				<h1 class="display-4">Latest <strong class="fw-bold">News</strong></h1>
 				<p>Get the latest news on the chia network.</p>
 			</div>
 		</div>
