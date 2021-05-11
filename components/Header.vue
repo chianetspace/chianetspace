@@ -87,6 +87,7 @@ export default {
 <style scoped>
 header {
 	z-index: 9;
+	box-shadow: inset 0 30px 30px #111b2b;
 }
 
 @media (min-width: 992px) {
