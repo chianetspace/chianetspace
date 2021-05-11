@@ -1,7 +1,8 @@
 <template>
 	<div id="order-modal" class="modal fade" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
-			<form class="modal-content" @submit.prevent="apply">
+			w
+			<div class="modal-content" data-submit.prevent="apply">
 				<div class="modal-header d-block text-center" style="padding: 30px 0 23px;">
 					<h4>
 						<i class="fas fa-leaf logo"></i>
@@ -40,7 +41,7 @@
 						Apply for Pre-Sale
 					</button>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </template>

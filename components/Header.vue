@@ -26,16 +26,16 @@
 							News
 						</NuxtLink>
 					</li>
-					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">
-							<i class="bx bxs-pie-chart-alt me-1"></i>
-							Statistics
-						</NuxtLink>
-					</li>
+					<!--					<li class="nav-item text-lg-start text-center">-->
+					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">-->
+					<!--							<i class="bx bxs-pie-chart-alt me-1"></i>-->
+					<!--							Statistics-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
 					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">
-							<i class="bx bxs-server me-1"></i>
-							Buy Plots
+							<i class="bx bxs-cube me-1"></i>
+							Plots Pre-Sales
 						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
@@ -61,13 +61,13 @@
 			<div class="w-25 d-none d-lg-block text-end">
 				<a class="btn btn-white- btn-link align-items-center text-inherit rounded-pill me-1"
 				   href="https://discord.gg/D6bRh8ZugX">
-					<i class="bx bxl-discord"></i>
-					Discord
+					<i class="bx bxl-telegram me-1"></i>
+					Telegram
 				</a>
-				<button class="btn btn-primary ms-auto px-4 rounded-pill" data-bs-target="#signup-modal"
+				<button class="btn btn-primary ms-auto px-4 rounded-pill" data-bs-target="#order-modal"
 						data-bs-toggle="modal">
-					<i class="bx bxs-cart me-1"></i>
-					Order a Plot
+					<i class="bx bxs-basket me-1"></i>
+					Plots Pre-Sales
 				</button>
 			</div>
 		</div>
