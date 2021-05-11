@@ -1,8 +1,7 @@
 <template>
 	<div>
-		<apexchart id="apexchart" :options="chartOptions" :series="series"
-				   class="position-fixed d-flex align-items-end bottom-0 start-0 end-0 w-100" height="421"
-				   style="z-index: 99" type="area"></apexchart>
+		<apexchart id="apexchart" :height="getHeight" :options="chartOptions" :series="series"
+				   class="position-fixed d-flex align-items-end bottom-0 start-0 end-0 w-100" type="area"></apexchart>
 		<div class="container text-center pb-5">
 			<h1 class="display-4">
 				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
@@ -50,8 +49,6 @@
 							<h6 class="fw-bold">Power Consumption</h6>
 							≈ {{ (summary.netSpace.largestWholeNumberBinaryValue * 1.5).toFixed(0) }} kW
 						</div>
-						<!--					</div>-->
-						<!--					<div class="row mt-4">-->
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">All Time High</h6>
 							{{
@@ -91,7 +88,6 @@
 export default {
 	data() {
 		return {
-			counter: 77238,
 			series: [{
 				name: "Net Space Growth",
 				data: []
@@ -165,7 +161,16 @@ export default {
 			this.series = [{
 				data: data
 			}];
+			this.chartOptions.chart.height = 50;
 		});
+	},
+	computed: {
+		getHeight: function () {
+			if (process.client) {
+				return window.innerWidth < 992 ? 121 : 421;
+			}
+			return 421;
+		}
 	},
 	methods: {
 		getDecimals: function (largestWholeNumberDecimalValue) {
@@ -181,6 +186,7 @@ export default {
 	z-index: -1;
 	user-select: none;
 	pointer-events: none;
+//height: 100px !important; //min-height: 100px !important;
 }
 
 .display-1 {
