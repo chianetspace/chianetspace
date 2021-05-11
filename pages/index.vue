@@ -5,39 +5,38 @@
 				   style="z-index: 99" type="area"></apexchart>
 		<div class="container text-center pb-5">
 			<h1 class="display-4">
-				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
+				Welcome to <strong class="fw-bold">Chia</strong>netSpace<span>.com</span>
 			</h1>
 			<p class="lead text-center">
-				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netspace and
+				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netSpace and
 				price data.
 			</p>
 			<h3 class="mt-4">Chia Net Space Now:</h3>
-			{{ summary }}
+			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
-				{{ summary.NetSpace.LargestWholeNumberDecimalValue.toFixed(0) }}<sub>.<span
-				v-anime="{textContent: [0, getDecimals(summary.NetSpace.LargestWholeNumberDecimalValue)],
+				{{ summary.netSpace.largestWholeNumberDecimalValue.toFixed(0) }}<sub>.<span
+				v-anime="{textContent: [0, getDecimals(summary.netSpace.largestWholeNumberDecimalValue)],
 				round: 1,
 				easing: 'linear',
 				// duration: 2100,
 				round: 1,
 				}"></span></sub>
-				{{ summary.NetSpace.LargestWholeNumberBinarySymbol }}
+				{{ summary.netSpace.largestWholeNumberBinarySymbol }}
 			</h2>
-			<!--			<p class="lead text-uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>-->
 			<div class="row mt-5 mb-4">
 				<div class="col-10 offset-1">
 					<div class="row">
 						<div class="col text-center">
 							<h6 class="fw-bold">Daily High / Daily Low</h6>
 							{{
-								summary.MarketData.market_data.high_24h.usd.toLocaleString('en-US', {
+								summary.dailyHigh.toLocaleString('en-US', {
 									style: 'currency',
 									currency: 'USD'
 								})
 							}}
 							/
 							{{
-								summary.MarketData.market_data.low_24h.usd.toLocaleString('en-US', {
+								summary.dailyLow.toLocaleString('en-US', {
 									style: 'currency',
 									currency: 'USD'
 								})
@@ -45,18 +44,18 @@
 						</div>
 						<div class="col text-center">
 							<h6 class="fw-bold">Last Update</h6>
-							{{ $moment(summary.LastUpdateDate).format('LLL') }}
+							{{ $moment(summary.lastUpdateDate).format('LLL') }}
 						</div>
 						<div class="col text-center">
 							<h6 class="fw-bold">Power Consumption</h6>
-							≈ {{ (summary.NetSpace.LargestWholeNumberBinaryValue * 1.5).toFixed(0) }} kW
+							≈ {{ (summary.netSpace.largestWholeNumberBinaryValue * 1.5).toFixed(0) }} kW
 						</div>
 					</div>
 					<div class="row mt-4">
 						<div class="col text-center">
 							<h6 class="fw-bold">All Time High</h6>
 							{{
-								summary.MarketData.market_data.ath.usd.toLocaleString('en-US', {
+								summary.allTimeHigh.toLocaleString('en-US', {
 									style: 'currency',
 									currency: 'USD'
 								})
@@ -65,7 +64,7 @@
 						<div class="col text-center">
 							<h6 class="fw-bold">Chia (XCH) Price</h6>
 							{{
-								summary.MarketData.market_data.current_price.usd.toLocaleString('en-US', {
+								summary.chiaPrice.toLocaleString('en-US', {
 									style: 'currency',
 									currency: 'USD'
 								})
@@ -74,7 +73,7 @@
 						<div class="col text-center">
 							<h6 class="fw-bold">Daily Volume</h6>
 							{{
-								summary.MarketData.market_data.total_volume.usd.toLocaleString('en-US', {
+								summary.dailyVolume.toLocaleString('en-US', {
 									style: 'currency',
 									currency: 'USD'
 								})
