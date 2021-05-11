@@ -1,25 +1,26 @@
 <template>
-	<header :class="'navbar navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
+	<header
+		:class="'navbar py-3 py-lg-5 mb-lg-0 mb-3 navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
 		<div class="container">
-			<NuxtLink class="navbar-brand w-25 h4 me-auto fw-normal mb-0" to="/">
+			<NuxtLink class="navbar-brand w-25 ms-lg-0 ms-2 h4 me-auto fw-normal mb-0" to="/">
 				<i class="fas fa-leaf logo"></i>
 				<strong>Chia</strong>NetSpace<span class="">.com</span>
 				<sup><span class="badge small text-uppercase text-success">Beta</span></sup>
 			</NuxtLink>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			<button class="navbar-toggler border-0 p-0" data-bs-toggle="collapse" type="button"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-center">
 				<ul class="navbar-nav text-uppercase mb-2 mb-lg-0">
-					<li class="nav-item">
+					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/">
 							<i class="bx bxs-dashboard me-1"></i>
 							Overview
 						</NuxtLink>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/news">
 							<i class="bx bxs-news me-1"></i>
 							News
@@ -43,18 +44,24 @@
 					<!--							Frequently Asked Questions-->
 					<!--						</NuxtLink>-->
 					<!--					</li>-->
-					<li class="nav-item">
+					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
 							About
 						</NuxtLink>
+					</li>
+					<li class="nav-item text-lg-start text-center d-block d-lg-none">
+						<a class="nav-link px-0" href="https://discord.gg/D6bRh8ZugX">
+							<i class="bx bxl-discord me-1"></i>
+							Join Discord
+						</a>
 					</li>
 				</ul>
 			</div>
 			<!--			<button class="btn btn-secondary px-4 me-2">-->
 			<!--				Get Started-->
 			<!--			</button>-->
-			<div class="w-25 text-end">
+			<div class="w-25 d-none d-lg-block text-end">
 				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="https://discord.gg/D6bRh8ZugX">
 					<i class="bx bxl-discord me-1"></i>
 					Join Discord
@@ -78,19 +85,20 @@ export default {
 </script>
 
 <style scoped>
-header
-{
-	padding-top: 2.5rem;
-	padding-bottom: 2.1rem;
+header {
 	z-index: 9;
+}
+
+.py-lg-5 {
+	padding-top: 2.5rem !important;
+	padding-bottom: 2.1rem !important;
 }
 
 header.navbar-dark {
 	transition: box-shadow 0.3s ease-in-out;
 }
 
-.nav-link
-{
+.nav-link {
 	font-size: 0.9em;
 }
 
