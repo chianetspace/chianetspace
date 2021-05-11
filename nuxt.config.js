@@ -19,7 +19,16 @@ export default {
 			{charset: 'utf-8'},
 			{name: 'viewport', content: 'width=device-width, initial-scale=1'},
 			{name: 'theme-color', content: '#4285f4'},
-			{hid: 'description', name: 'description', content: ''}
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Dive into statistics and graphs of Chia (XCH) Proof of Space and  Time historical netSpace and price data.'
+			},
+			{
+				hid: 'keywords',
+				name: 'keywords',
+				content: 'chia,chianet,xch,cryptocurrency,hard drive,smart transactions,'
+			}
 		],
 		link: [
 			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
