@@ -1,7 +1,7 @@
 <template>
 	<header
 		:class="'navbar py-3 py-lg-5 mb-lg-0 mb-3 navbar-expand-lg position-sticky top-0 navbar-dark ' + (this.shadow ? 'shadow' : '')">
-		<div class="container">
+		<div class="container-fluid">
 			<NuxtLink class="navbar-brand w-25 ms-lg-0 ms-2 h4 me-auto fw-normal mb-0" to="/">
 				<i class="fas fa-leaf logo"></i>
 				<strong>Chia</strong>NetSpace<span class="">.com</span>
@@ -14,7 +14,7 @@
 			</button>
 			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-center">
 				<ul class="navbar-nav text-uppercase mb-2 mb-lg-0">
-					<li class="nav-item text-lg-start text-center">
+					<li class="nav-item text-lg-start text-center d-none d-xl-block d-md-none d-sm-none">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/">
 							<i class="bx bxs-dashboard me-1"></i>
 							Overview
@@ -26,24 +26,24 @@
 							News
 						</NuxtLink>
 					</li>
-					<!--					<li class="nav-item">-->
-					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">-->
-					<!--							<i class="bx bxs-pie-chart-alt me-1"></i>-->
-					<!--							Statistics-->
-					<!--						</NuxtLink>-->
-					<!--					</li>-->
-					<!--					<li class="nav-item">-->
-					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">-->
-					<!--							<i class="bx bxs-server me-1"></i>-->
-					<!--							Buy Plots-->
-					<!--						</NuxtLink>-->
-					<!--					</li>-->
-					<!--					<li class="nav-item">-->
-					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">-->
-					<!--							<i class="bx bxs-book-content me-1"></i>-->
-					<!--							Frequently Asked Questions-->
-					<!--						</NuxtLink>-->
-					<!--					</li>-->
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">
+							<i class="bx bxs-pie-chart-alt me-1"></i>
+							Statistics
+						</NuxtLink>
+					</li>
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/pricing">
+							<i class="bx bxs-server me-1"></i>
+							Buy Plots
+						</NuxtLink>
+					</li>
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
+							<i class="bx bxs-book-content me-1"></i>
+							FAQ
+						</NuxtLink>
+					</li>
 					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
@@ -58,18 +58,17 @@
 					</li>
 				</ul>
 			</div>
-			<!--			<button class="btn btn-secondary px-4 me-2">-->
-			<!--				Get Started-->
-			<!--			</button>-->
 			<div class="w-25 d-none d-lg-block text-end">
-				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="https://discord.gg/D6bRh8ZugX">
-					<i class="bx bxl-discord me-1"></i>
-					Join Discord
+				<a class="btn btn-white- btn-link align-items-center text-inherit rounded-pill me-1"
+				   href="https://discord.gg/D6bRh8ZugX">
+					<i class="bx bxl-discord"></i>
+					Discord
 				</a>
-				<!--				<button data-bs-toggle="modal" data-bs-target="#signup-modal" class="btn btn-primary ms-auto px-4 rounded-pill">-->
-				<!--					<i class="bx bxs-cart me-1"></i>-->
-				<!--					Order a Plot-->
-				<!--				</button>-->
+				<button class="btn btn-primary ms-auto px-4 rounded-pill" data-bs-target="#signup-modal"
+						data-bs-toggle="modal">
+					<i class="bx bxs-cart me-1"></i>
+					Order a Plot
+				</button>
 			</div>
 		</div>
 	</header>
@@ -87,6 +86,7 @@ export default {
 <style scoped>
 header {
 	z-index: 9;
+	box-shadow: inset 0 30px 30px #111b2b;
 }
 
 @media (min-width: 992px) {
