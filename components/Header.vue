@@ -55,7 +55,7 @@
 			<!--				Get Started-->
 			<!--			</button>-->
 			<div class="w-25 text-end">
-				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="https://chianetspace.com/discordlogo.png">
+				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="https://discord.gg/D6bRh8ZugX">
 					<i class="bx bxl-discord me-1"></i>
 					Join Discord
 				</a>
