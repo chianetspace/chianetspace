@@ -55,9 +55,9 @@
 			<!--				Get Started-->
 			<!--			</button>-->
 			<div class="w-25 text-end">
-				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="mailto:contact@chianetspace.com">
-					<i class="bx bxs-paper-plane me-1"></i>
-					Contact Us
+				<a class="btn btn-primary ms-auto px-4 rounded-pill" href="https://chianetspace.com/discordlogo.png">
+					<i class="bx bxl-discord me-1"></i>
+					Join Discord
 				</a>
 				<!--				<button data-bs-toggle="modal" data-bs-target="#signup-modal" class="btn btn-primary ms-auto px-4 rounded-pill">-->
 				<!--					<i class="bx bxs-cart me-1"></i>-->

@@ -41,7 +41,7 @@ export default {
 	async asyncData({$axios}) {
 		const articles = await $axios.$get('news/latest')
 		return {articles}
-	},
+	}
 }
 </script>
 
