@@ -28,6 +28,15 @@ export default {
 		}
 	},
 	mounted() {
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+		gtag('config', 'G-F6WQ5SR60J');
+
 		let orderModal = document.getElementById('order-modal');
 		orderModal.addEventListener('show.bs.modal', _ => this.blurred = true);
 		orderModal.addEventListener('hide.bs.modal', _ => this.blurred = false);

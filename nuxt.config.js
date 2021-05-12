@@ -37,9 +37,12 @@ export default {
 			}
 		],
 		link: [
-			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
-			{ rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' },
-			{ rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css' },
+			{rel: 'icon', type: 'image/svg', href: '/favicon.svg'},
+			{rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'},
+			{rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css'},
+		],
+		script: [
+			{src: 'https://www.googletagmanager.com/gtag/js?id=G-F6WQ5SR60J', body: true}
 		]
 	},
 
@@ -72,10 +75,12 @@ export default {
 		'nuxt-animejs',
 		'@nuxtjs/moment',
 		'@nuxtjs/pwa',
-		['@nuxtjs/google-analytics', {
-			id: 'G-F6WQ5SR60J'
-		}]
+		'@nuxtjs/google-analytics'
 	],
+
+	googleAnalytics: {
+		id: 'G-F6WQ5SR60J'
+	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
