@@ -30,12 +30,12 @@
 					</div>
 					<div class="d-flex justify-content-evenly">
 						<a class="d-flex justify-content-center text-inherit text-muted flex-column mb-3 align-items-center"
-						   href="://t.me/chianetspace">
+						   href="https://t.me/chianetspace">
 							<i class="display-6 bx bxl-telegram"></i>
 							Join our Telegram
 						</a>
 						<a class="d-flex justify-content-center text-inherit text-muted flex-column mb-3 align-items-center"
-						   href="://t.me/chianetspace">
+						   href="https://discord.gg/D6bRh8ZugX">
 							<i class="display-6 bx bxl-discord"></i>
 							Join our Discord
 						</a>
