@@ -72,10 +72,12 @@ export default {
 		'nuxt-animejs',
 		'@nuxtjs/moment',
 		'@nuxtjs/pwa',
-		['@nuxtjs/google-analytics', {
-			id: 'G-F6WQ5SR60J'
-		}]
+		'@nuxtjs/google-analytics'
 	],
+
+	googleAnalytics: {
+		id: 'G-F6WQ5SR60J'
+	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
