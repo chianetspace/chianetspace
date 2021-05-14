@@ -110,6 +110,7 @@ export default {
 				dailyHigh: 0,
 				dailyLow: 0,
 				netSpace: {
+					largestWholeNumberBinarySymbol: '',
 					largestWholeNumberBinaryValue: 0,
 					largestWholeNumberDecimalValue: 0
 				}
