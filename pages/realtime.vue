@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<apexchart id="apexchart" :height="getHeight" :options="chartOptions" :series="series"
-				   class="position-fixed d-flex align-items-end bottom-0 start-0 end-0 w-100" type="area"></apexchart>
-		<div class="container text-center pb-5">
+		<div class="container text-center">
 			<h1 class="display-4">
 				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
 			</h1>
@@ -11,31 +9,14 @@
 				price data.
 			</p>
 			<h3 class="mt-4 mb-1">Chia Net Space Now:</h3>
-			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
 				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0) }}<sub>.<span
-				v-anime="{textContent: [0, getDecimals(summary.netSpace.largestWholeNumberBinaryValue)],
+				v-anime="{textContent: [this.lastNetspace, getDecimals(summary.netSpace.largestWholeNumberBinaryValue)],
 				round: 1,
 				easing: 'linear',
-				// duration: 2100,
-				round: 1,
 				}"></span></sub>
 				{{ summary.netSpace.largestWholeNumberBinarySymbol }}
-				<!--				<sup class="text-white">+38%</sup>-->
 			</h2>
-			<div class="mt-4">
-				<button class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" data-bs-target="#order-modal"
-						data-bs-toggle="modal">
-					<i class="bx bxs-basket me-1"></i>
-					Plots Pre-Sales
-					<!--					<i class="bx bxs-paper-plane me-1"></i>-->
-					<!--					Get More Stats-->
-				</button>
-				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
-					<i class="bx bxl-discord"></i>
-					Join Discord
-				</a>
-			</div>
 			<div class="row mt-5 small">
 				<div class="col-lg-10 offset-lg-1">
 					<div class="row">
@@ -100,8 +81,11 @@
 
 <script>
 export default {
+	name: 'realtime',
+	layout: 'blank',
 	data() {
 		return {
+			lastNetspace: 0,
 			summary: {
 				dailyVolume: 0,
 				chiaPrice: 0,
@@ -114,87 +98,12 @@ export default {
 					largestWholeNumberBinaryValue: 0,
 					largestWholeNumberDecimalValue: 0
 				}
-			},
-			series: [{
-				name: "Net Space Growth",
-				data: []
-			}],
-			chartOptions: {
-				chart: {
-					type: 'area',
-					offsetY: 10,
-					zoom: {
-						enabled: false
-					},
-					toolbar: {
-						show: false,
-					},
-				},
-				xaxis: {
-					floating: true,
-					axisTicks: {
-						show: false
-					},
-					axisBorder: {
-						show: false
-					},
-					crosshairs: {
-						show: false
-					},
-					show: false,
-					tooltip: {
-						enabled: false
-					},
-					labels: {
-						show: false
-					}
-				},
-				yaxis: {
-					show: false
-				},
-				grid: {
-					show: false,
-					padding: {
-						top: 0,
-						right: 0,
-						bottom: 0,
-						left: 0
-					}
-				},
-				colors: ['rgba(37, 198, 135, 1)'],
-				dataLabels: {
-					enabled: false
-				},
-				stroke: {
-					curve: 'smooth',
-					// lineCap: 'butt',
-					// colors: undefined,
-					width: 7,
-					// dashArray: 10,
-				},
-				markers: {
-					// size: 5,
-					strokeWidth: 0,
-				}
-			},
+			}
 		}
 	},
-	// async asyncData({$axios}) {
-	// 	const summary = await $axios.$get('data/summary')
-	// 	return {summary}
-	// },
 	created() {
-		this.$axios.$get('data/summary').then((data) => {
-			this.summary = data;
-		})
-	},
-	mounted() {
-		this.$axios.$get('charts/net-space-growth').then((data) => {
-			this.series = [{
-				data: data
-			}];
-			this.chartOptions.chart.height = 50;
-		});
+		this.init();
+		setInterval(() => this.init(), 77000);
 	},
 	computed: {
 		getHeight: function () {
@@ -208,6 +117,12 @@ export default {
 		getDecimals: function (largestWholeNumberDecimalValue) {
 			let decimals = Math.abs(largestWholeNumberDecimalValue) - Math.floor(largestWholeNumberDecimalValue);
 			return parseInt(decimals.toString().substring(2, 5));
+		},
+		init: function () {
+			this.lastNetspace = this.summary.netSpace.largestWholeNumberBinaryValue;
+			this.$axios.$get('data/summary').then((data) => {
+				this.summary = data;
+			});
 		}
 	}
 }
