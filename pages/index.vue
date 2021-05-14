@@ -102,6 +102,18 @@
 export default {
 	data() {
 		return {
+			summary: {
+				dailyVolume: 0,
+				chiaPrice: 0,
+				lastUpdateDate: null,
+				allTimeHigh: 0,
+				dailyHigh: 0,
+				dailyLow: 0,
+				netSpace: {
+					largestWholeNumberBinaryValue: 0,
+					largestWholeNumberDecimalValue: 0
+				}
+			},
 			series: [{
 				name: "Net Space Growth",
 				data: []
@@ -166,9 +178,14 @@ export default {
 			},
 		}
 	},
-	async asyncData({$axios}) {
-		const summary = await $axios.$get('data/summary')
-		return {summary}
+	// async asyncData({$axios}) {
+	// 	const summary = await $axios.$get('data/summary')
+	// 	return {summary}
+	// },
+	created() {
+		this.$axios.$get('data/summary').then((data) => {
+			this.summary = data;
+		})
 	},
 	mounted() {
 		this.$axios.$get('charts/net-space-growth').then((data) => {
