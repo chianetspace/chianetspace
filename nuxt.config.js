@@ -52,6 +52,7 @@ export default {
 	plugins: [
 		'~/plugins/axios.js',
 		'~/plugins/bootstrap.js',
+		'~/plugins/gravatar.js',
 		{src: '~/plugins/apexcharts.js', mode: 'client'}
 
 	],
