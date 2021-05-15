@@ -63,7 +63,7 @@ export default {
 			model: {
 				farmerPrivateKey: "string",
 				poolPrivateKey: "string",
-				plotsCount: 0
+				plotsCount: 1
 			}
 		}
 	},
