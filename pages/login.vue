@@ -75,7 +75,7 @@ export default {
 		login: function () {
 			this.$auth.loginWith('local', {data: this.model})
 				.then(() => this.$router.push('/dashboard'))
-				.catch(error => console.log(error));
+				.catch(error => alert("Unable to login"));
 		}
 	}
 }
