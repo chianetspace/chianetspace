@@ -43,6 +43,10 @@ export default {
 		]
 	},
 
+	router: {
+		middleware: ['auth']
+	},
+
 	// Global CSS: https://go.nuxtjs.dev/config-css
 	css: [
 		"~/assets/scss/app.scss"
@@ -83,9 +87,28 @@ export default {
 		'@nuxtjs/axios',
 		'@nuxtjs/sitemap',
 		'@nuxtjs/robots',
+		'@nuxtjs/auth-next'
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
+
+	auth: {
+		redirect: {
+			login: '/login',
+			logout: '/logout',
+			callback: '/',
+			home: '/'
+		},
+		strategies: {
+			local: {
+				endpoints: {
+					login: {url: '/authentication/login', method: 'post'},
+					logout: {url: '/authentication/logout', method: 'post'},
+					user: {url: '/authentication/user', method: 'get'}
+				}
+			}
+		}
+	},
 
 	sitemap: {
 		hostname: 'https://chianetspace.com'
