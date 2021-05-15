@@ -55,6 +55,7 @@ export default {
 	plugins: [
 		'~/plugins/axios.js',
 		'~/plugins/bootstrap.js',
+		'~/plugins/gravatar.js',
 		{src: '~/plugins/apexcharts.js', mode: 'client'}
 
 	],
@@ -87,9 +88,28 @@ export default {
 		'@nuxtjs/axios',
 		'@nuxtjs/sitemap',
 		'@nuxtjs/robots',
+		'@nuxtjs/auth-next'
 		// '@nuxtjs/feed'
 		// https://go.nuxtjs.dev/bootstrap
 	],
+
+	auth: {
+		redirect: {
+			login: '/login',
+			logout: '/logout',
+			callback: '/',
+			home: '/'
+		},
+		strategies: {
+			local: {
+				endpoints: {
+					login: {url: '/authentication/login', method: 'post'},
+					logout: {url: '/authentication/logout', method: 'post'},
+					user: {url: '/authentication/user', method: 'get'}
+				}
+			}
+		}
+	},
 
 	sitemap: {
 		hostname: 'https://chianetspace.com'

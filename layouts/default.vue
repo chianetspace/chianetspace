@@ -22,6 +22,7 @@ export default {
 			blurred: false
 		}
 	},
+	auth: 'guest',
 	methods: {
 		handleScroll: function () {
 			this.shadow = window.scrollY !== 0;
@@ -37,9 +38,11 @@ export default {
 		gtag('js', new Date());
 		gtag('config', 'G-F6WQ5SR60J');
 
-		let orderModal = document.getElementById('order-modal');
-		orderModal.addEventListener('show.bs.modal', _ => this.blurred = true);
-		orderModal.addEventListener('hide.bs.modal', _ => this.blurred = false);
+		let signInModal = document.getElementById('sign-in-modal');
+		if (signInModal !== null) {
+			signInModal.addEventListener('show.bs.modal', _ => this.blurred = true);
+			signInModal.addEventListener('hide.bs.modal', _ => this.blurred = false);
+		}
 
 		(function (h, o, t, j, a, r) {
 			h.hj = h.hj || function () {

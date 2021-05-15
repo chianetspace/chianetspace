@@ -33,11 +33,16 @@
 					<!--						</NuxtLink>-->
 					<!--					</li>-->
 					<li class="nav-item text-lg-start text-center">
-						<a class="nav-link px-0" data-bs-target="#order-modal" data-bs-toggle="modal"
-						   data-exact-active-class="active" data-to="/pricing" href="javascript:void(0);">
+						<NuxtLink class="nav-link px-0" to="/dashboard/plots">
 							<i class="bx bxs-cube me-1"></i>
-							Plots Pre-Sales
-						</a>
+							Buy Plots
+						</NuxtLink>
+					</li>
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-0" to="/dashboard/pool">
+							<i class="bx bxs-server me-1"></i>
+							Pool
+						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
@@ -65,11 +70,14 @@
 					<i class="bx bxl-discord me-1"></i>
 					Discord
 				</a>
-				<button class="btn btn-primary ms-auto px-4 rounded-pill" data-bs-target="#order-modal"
-						data-bs-toggle="modal">
-					<i class="bx bxs-basket me-1"></i>
-					Plots Pre-Sales
-				</button>
+				<NuxtLink v-if="this.$auth.loggedIn" class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
+					<i class="bx bxs-dashboard align-middle me-1"></i>
+					Dashboard
+				</NuxtLink>
+				<NuxtLink v-else class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
+					<i class="bx bxs-basket align-middle me-1"></i>
+					Order Plots
+				</NuxtLink>
 			</div>
 		</div>
 	</header>
@@ -79,7 +87,7 @@
 export default {
 	name: "Header",
 	props: {
-		shadow: false
+		shadow: false,
 	}
 }
 </script>

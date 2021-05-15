@@ -24,13 +24,21 @@
 				<!--				<sup class="text-white">+38%</sup>-->
 			</h2>
 			<div class="mt-4">
-				<button class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" data-bs-target="#order-modal"
-						data-bs-toggle="modal">
-					<i class="bx bxs-basket me-1"></i>
-					Plots Pre-Sales
-					<!--					<i class="bx bxs-paper-plane me-1"></i>-->
-					<!--					Get More Stats-->
-				</button>
+				<!--				<NuxtLink class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" to="/dashboard">-->
+				<!--					<i class="bx bxs-basket me-1"></i>-->
+				<!--					Order Plots Now-->
+				<!--					&lt;!&ndash;					<i class="bx bxs-paper-plane me-1"></i>&ndash;&gt;-->
+				<!--					&lt;!&ndash;					Get More Stats&ndash;&gt;-->
+				<!--				</NuxtLink>-->
+				<NuxtLink v-if="this.$auth.loggedIn" class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill"
+						  to="/dashboard">
+					<i class="bx bxs-dashboard align-middle me-1"></i>
+					Dashboard
+				</NuxtLink>
+				<NuxtLink v-else class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" to="/dashboard">
+					<i class="bx bxs-basket align-middle me-1"></i>
+					Order Plots Now
+				</NuxtLink>
 				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
 					<i class="bx bxl-discord"></i>
 					Join Discord
