@@ -17,6 +17,7 @@
 		"generate": "nuxt generate"
 	},
 	"dependencies": {
+		"@nuxtjs/auth-next": "5.0.0-1620773067.c356fed",
 		"@nuxtjs/axios": "^5.13.1",
 		"@nuxtjs/feed": "^2.0.0",
 		"@nuxtjs/robots": "^2.5.0",
