@@ -74,7 +74,7 @@ export default {
 			})
 		},
 		totalAmount: function () {
-			return this.model.count * 12;
+			return this.model.plotsCount * 12;
 		}
 	}
 }
