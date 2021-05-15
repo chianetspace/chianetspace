@@ -12,18 +12,25 @@
 			<ul class="nav nav-pills flex-column mb-auto">
 				<li class="nav-item">
 					<NuxtLink class="nav-link text-white" exact-active-class="active" to="/dashboard">
-						<i class="bx bxs-home me-2"></i>
+						<i class="bx bxs-category-alt me-2"></i>
 						Welcome
 					</NuxtLink>
 				</li>
 				<li class="mt-3">
-					<NuxtLink class="nav-link text-white" exact-active-class="active" to="/dashboard/plots">
-						<i class="bx bxs-file-blank me-2"></i>
+					<NuxtLink class="nav-link text-white" exact-active-class="active" to="/dashboard/order-plots">
+						<i class="bx bxs-cart me-2"></i>
 						Order Plots
 						<sup><label class="badge bg-primary text-uppercase ms-1">New</label></sup>
 					</NuxtLink>
 				</li>
 				<li>
+					<NuxtLink class="nav-link text-white" exact-active-class="active" to="/dashboard/plots">
+						<i class="bx bxs-cube me-2"></i>
+						My Plots
+						<!--						<sup><label class="badge bg-primary text-uppercase ms-1">New</label></sup>-->
+					</NuxtLink>
+				</li>
+				<li class="mt-3">
 					<NuxtLink class="nav-link text-white" exact-active-class="active" to="/dashboard/pool">
 						<i class="bx bxs-server me-2"></i>
 						ChiaNetSpace's Pool
@@ -47,7 +54,7 @@
 				<div class="d-flex align-items-center text-white text-decoration-none">
 					<v-gravatar :email="this.$auth.user.email" alt="gravatar" class="rounded-circle me-2" height="32"
 								width="32"/>
-					<strong v-text="this.$auth.user.name"></strong>
+					<strong class="name" v-text="this.$auth.user.email"></strong>
 					<a class="ms-auto" href="javascript:void(0);" @click="logout">
 						<i class="bx bx-power-off mb-2 align-middle"></i>
 					</a>
@@ -105,6 +112,13 @@ export default {
 
 .text-muted.active {
 	color: white !important;
+}
+
+.name {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 70%;
+	white-space: nowrap;
 }
 
 .active .badge {
