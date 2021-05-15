@@ -24,13 +24,12 @@
 				<!--				<sup class="text-white">+38%</sup>-->
 			</h2>
 			<div class="mt-4">
-				<button class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" data-bs-target="#order-modal"
-						data-bs-toggle="modal">
-					<i class="bx bxs-cart me-1"></i>
+				<NuxtLink class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" to="/dashboard">
+					<i class="bx bxs-basket me-1"></i>
 					Order Plots Now
 					<!--					<i class="bx bxs-paper-plane me-1"></i>-->
 					<!--					Get More Stats-->
-				</button>
+				</NuxtLink>
 				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
 					<i class="bx bxl-discord"></i>
 					Join Discord
