@@ -3,8 +3,9 @@
 		<NewsletterModal/>
 		<div id="layout-wrapper" :class="'d-flex flex-column vh-100 ' + (this.blurred ? 'blurred' : '')">
 			<Header :shadow="this.shadow"/>
-			<main :class="'flex-shrink-0 ' + (this.$route.name !== 'frequently-asked-questions' ? 'flex-centered' : '')"
-				  role="main">
+			<main
+				:class="'flex-shrink-0 ' + (this.$route.name !== 'frequently-asked-questions' && this.$route.name !== 'statistics' ? 'flex-centered' : '')"
+				role="main">
 				<div class="container">
 					<Nuxt/>
 				</div>
