@@ -70,8 +70,12 @@
 					<i class="bx bxl-discord me-1"></i>
 					Discord
 				</a>
-				<NuxtLink class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
-					<i class="bx bxs-basket me-1"></i>
+				<NuxtLink v-if="this.$auth.loggedIn" class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
+					<i class="bx bxs-dashboard align-middle me-1"></i>
+					Dashboard
+				</NuxtLink>
+				<NuxtLink v-else class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
+					<i class="bx bxs-basket align-middle me-1"></i>
 					Order Plots
 				</NuxtLink>
 			</div>

@@ -12,7 +12,8 @@
 					</h1>
 					<p class="col-md-8 mb-4 fs-4">Dive into statistics and graphs of Chia (XCH) Proof of Space and Time
 						historical netspace and price data.</p>
-					<NuxtLink class="btn btn-primary px-4 btn-lg rounded-pill" to="/dashboard/plots" type="button">
+					<NuxtLink class="btn btn-primary px-4 btn-lg rounded-pill" to="/dashboard/order-plots"
+							  type="button">
 						<i class="bx bx-basket me-1"></i>
 						Order Plots
 					</NuxtLink>
@@ -23,48 +24,6 @@
 					</NuxtLink>
 				</div>
 			</div>
-			<!--			<div class="row justify-content-center text-center justify-content-center mt-5">-->
-			<!--				<div class="col">-->
-			<!--					<a href="https://twitter.com/chia_project" target="_blank">-->
-			<!--						<i class="bx display-6 bxl-github"></i>-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--				<div class="col">-->
-			<!--					<a href="https://twitter.com/chia_project" target="_blank">-->
-			<!--						<i class="bx display-6 bxl-twitter"></i>-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--				<div class="col">-->
-			<!--					<a href="https://www.facebook.com/ChiaProject" target="_blank">-->
-			<!--						<i class="bx display-6 bxl-facebook"></i>-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--				<div class="col">-->
-			<!--					<a href="https://instagram.com/chia_project" target="_blank">-->
-			<!--						<i class="bx display-6 bxl-instagram"></i>-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--				<div class="col">-->
-			<!--					<a href="https://medium.com/@chia.net" target="_blank">-->
-			<!--						<i class="bx display-6 bxl-medium"></i>-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--			</div>-->
-
-			<!--			<div class="mt-5">-->
-			<!--				<div class="d-flex justify-content-evenly">-->
-			<!--					<a class="d-flex justify-content-center text-inherit text-white flex-column mb-3 align-items-center"-->
-			<!--					   href="https://t.me/chianetspace">-->
-			<!--						<i class="display-6 bx bxl-telegram"></i>-->
-			<!--						Join our Telegram-->
-			<!--					</a>-->
-			<!--					<a class="d-flex justify-content-center text-inherit text-white flex-column mb-3 align-items-center"-->
-			<!--					   href="https://discord.gg/D6bRh8ZugX">-->
-			<!--						<i class="display-6 bx bxl-discord"></i>-->
-			<!--						Join our Discord-->
-			<!--					</a>-->
-			<!--				</div>-->
-			<!--			</div>-->
 		</div>
 	</div>
 </template>
