@@ -61,8 +61,8 @@ export default {
 	data() {
 		return {
 			model: {
-				farmerPrivateKey: "string",
-				poolPrivateKey: "string",
+				farmerPrivateKey: '',
+				poolPrivateKey: '',
 				plotsCount: 1
 			}
 		}
