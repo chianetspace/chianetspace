@@ -22,6 +22,7 @@ export default {
 			blurred: false
 		}
 	},
+	auth: 'guest',
 	methods: {
 		handleScroll: function () {
 			this.shadow = window.scrollY !== 0;
@@ -29,8 +30,10 @@ export default {
 	},
 	mounted() {
 		let orderModal = document.getElementById('order-modal');
-		orderModal.addEventListener('show.bs.modal', _ => this.blurred = true);
-		orderModal.addEventListener('hide.bs.modal', _ => this.blurred = false);
+		if (orderModal !== null) {
+			orderModal.addEventListener('show.bs.modal', _ => this.blurred = true);
+			orderModal.addEventListener('hide.bs.modal', _ => this.blurred = false);
+		}
 
 		(function (h, o, t, j, a, r) {
 			h.hj = h.hj || function () {

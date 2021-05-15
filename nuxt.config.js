@@ -37,9 +37,9 @@ export default {
 			}
 		],
 		link: [
-			{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
-			{ rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' },
-			{ rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css' },
+			{rel: 'icon', type: 'image/svg', href: '/favicon.svg'},
+			{rel: 'stylesheet', href: 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'},
+			{rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css'},
 		]
 	},
 
