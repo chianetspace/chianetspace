@@ -15,43 +15,43 @@
 			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-center">
 				<ul class="navbar-nav text-uppercase mb-2 mb-lg-0">
 					<li class="nav-item text-lg-start text-center d-none d-xl-block d-md-none d-sm-none">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/">
+						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/">
 							<i class="bx bxs-dashboard me-1"></i>
 							Overview
 						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/news">
+						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/news">
 							<i class="bx bxs-news me-1"></i>
 							News
 						</NuxtLink>
 					</li>
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/statistics">
+							<i class="bx bxs-pie-chart-alt me-1"></i>
+							Stats
+						</NuxtLink>
+					</li>
 					<!--					<li class="nav-item text-lg-start text-center">-->
-					<!--						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/statistics">-->
-					<!--							<i class="bx bxs-pie-chart-alt me-1"></i>-->
-					<!--							Statistics-->
+					<!--						<NuxtLink class="nav-link px-0" to="/dashboard/plots">-->
+					<!--							<i class="bx bxs-cube me-1"></i>-->
+					<!--							Plots-->
 					<!--						</NuxtLink>-->
 					<!--					</li>-->
 					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" to="/dashboard/plots">
-							<i class="bx bxs-cube me-1"></i>
-							Buy Plots
-						</NuxtLink>
-					</li>
-					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" to="/dashboard/pool">
+						<NuxtLink class="nav-link px-1" to="/dashboard/pool">
 							<i class="bx bxs-server me-1"></i>
 							Pool
 						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/frequently-asked-questions">
+						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/frequently-asked-questions">
 							<i class="bx bxs-book-content me-1"></i>
 							FAQ
 						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" exact-active-class="active" to="/about">
+						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
 							About
 						</NuxtLink>
@@ -65,11 +65,11 @@
 				</ul>
 			</div>
 			<div class="w-25 d-none d-lg-block text-end">
-				<a class="btn btn-white- btn-link align-items-center text-inherit rounded-pill me-1"
-				   href="https://discord.gg/D6bRh8ZugX">
-					<i class="bx bxl-discord me-1"></i>
-					Discord
-				</a>
+				<!--				<a class="btn btn-white- btn-link align-items-center text-inherit rounded-pill me-1"-->
+				<!--				   href="https://discord.gg/D6bRh8ZugX">-->
+				<!--					<i class="bx bxl-discord me-1"></i>-->
+				<!--					Discord-->
+				<!--				</a>-->
 				<NuxtLink v-if="this.$auth.loggedIn" class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
 					<i class="bx bxs-dashboard align-middle me-1"></i>
 					Dashboard
