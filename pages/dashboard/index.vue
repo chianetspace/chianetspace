@@ -10,9 +10,8 @@
 						<strong>Chia</strong>NetSpace.com
 					</span>
 					</h1>
-					<p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the
-						one in previous versions of Bootstrap. Check out the examples below for how you can remix and
-						restyle it to your liking.</p>
+					<p class="col-md-8 mb-4 fs-4">Dive into statistics and graphs of Chia (XCH) Proof of Space and Time
+						historical netspace and price data.</p>
 					<NuxtLink class="btn btn-primary px-4 btn-lg rounded-pill" to="/dashboard/plots" type="button">
 						<i class="bx bx-basket me-1"></i>
 						Order Plots
