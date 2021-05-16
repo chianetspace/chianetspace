@@ -20,7 +20,7 @@
 						</div>
 					</div>
 					<div class="mb-3">
-						<label class="form-label" for="telegram">Telegram (Optionnal)</label>
+						<label class="form-label" for="telegram">Telegram (Optional)</label>
 						<input id="telegram" v-model="model.telegram" class="form-control form-control-lg"
 							   placeholder="Enter your telegram" type="text">
 					</div>
