@@ -2,7 +2,7 @@
 	<div>
 		<h3>
 			<i class="fas fa-leaf text-primary me-2"></i>
-			<span class="d-lg-block d-none"><strong>Chia</strong>NetSpace.com &rarr;</span> My Plots
+			<span class="d-lg-inline-block d-none"><strong>Chia</strong>NetSpace.com &rarr;</span> My Plots
 		</h3>
 		<p class="lead mb-4">Tired to generate your plots yourself? We are here 🙌</p>
 		<p v-if="plots.length === 0" class="text-warning">You actually don't have any plots, order
