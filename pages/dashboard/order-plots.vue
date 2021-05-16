@@ -37,7 +37,7 @@
 			<button class="btn btn-secondary" type="reset">Clear</button>
 			<button class="btn btn-primary ms-1" type="submit">
 				<i class="bx bxs-paper-plane me-1"></i>
-				Create Order
+				Create Order (${{ totalAmount() }})
 			</button>
 		</form>
 		<form id="coinpayments" action="https://www.coinpayments.net/index.php" method="post" name="coinpayments">

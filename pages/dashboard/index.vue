@@ -1,7 +1,7 @@
 <template>
 	<div class="w-100 h-100 d-flex align-items-center">
 		<div class="container my-5">
-			<div class="px-5 my-5 mb-4 bg-light rounded-3">
+			<div class="px-lg-5 px-3 my-5 mb-4 bg-light rounded-3">
 				<div class="container-fluid py-5">
 					<h1 class="display-5 fw-normal">
 						Welcome to
@@ -17,7 +17,8 @@
 						<i class="bx bx-basket me-1"></i>
 						Order Plots
 					</NuxtLink>
-					<NuxtLink class="btn btn-secondary px-4 btn-lg rounded-pill ms-2" to="/dashboard/pool"
+					<NuxtLink class="btn btn-secondary px-4 btn-lg rounded-pill ms-lg-2 mt-3 mt-lg-0"
+							  to="/dashboard/pool"
 							  type="button">
 						<i class="bx bx-server me-1"></i>
 						Join our Pool
