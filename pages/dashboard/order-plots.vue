@@ -34,10 +34,11 @@
 				<label class="form-label fw-bold" for="plotnumber">Plots Number: {{ model.plotsCount }}</label>
 				<input id="plotnumber" v-model="model.plotsCount" class="form-range" max="500" min="1" type="range">
 			</div>
+			<p>Order Amount: ${{ totalAmount() }}</p>
 			<button class="btn btn-secondary" type="reset">Clear</button>
 			<button class="btn btn-primary ms-1" type="submit">
 				<i class="bx bxs-paper-plane me-1"></i>
-				Create Order (${{ totalAmount() }})
+				Create Order
 			</button>
 		</form>
 		<form id="coinpayments" action="https://www.coinpayments.net/index.php" method="post" name="coinpayments">
