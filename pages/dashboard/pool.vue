@@ -2,7 +2,7 @@
 	<div>
 		<h3>
 			<i class="bx bxs-server align-middle"></i>
-			<strong>Chia</strong>NetSpace.com &rarr; Official Pool
+			<span class="d-lg-block d-none"><strong>Chia</strong>NetSpace.com &rarr;</span> Official Pool
 		</h3>
 		We are actually preparing the launch of our pool, really soon!
 		<h5 class="mt-5">

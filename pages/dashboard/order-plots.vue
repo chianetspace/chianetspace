@@ -2,7 +2,7 @@
 	<div>
 		<h3>
 			<i class="fas fa-leaf text-primary me-2"></i>
-			<strong>Chia</strong>NetSpace.com &rarr; Order Plots
+			<span class="d-lg-block d-none"><strong>Chia</strong>NetSpace.com &rarr;</span> Order Plots
 		</h3>
 		<p class="lead mb-3">Tired to generate your plots yourself? We are here 🙌</p>
 		<h5 class="mt-5">
