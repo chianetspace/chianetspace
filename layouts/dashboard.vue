@@ -62,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-		<main class="align-items-start w-100 h-100 p-lg-3 p-2">
+		<main class="align-items-start w-100 h-100 overflow-scroll p-lg-3 p-2w">
 			<div class="container my-lg-5 my-3">
 				<Nuxt/>
 			</div>
