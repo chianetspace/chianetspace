@@ -19,10 +19,10 @@
 		</div>
 		<form method="post" @submit.prevent="createOrder">
 			<div class="mb-3">
-				<label class="form-label fw-bold" for="farmerprivatekey">Farmer Private Key <span
+				<label class="form-label fw-bold" for="farmerprivatekey">Farmer Public Key <span
 					class="text-danger">*</span></label>
 				<input id="farmerprivatekey" v-model="model.farmerPrivateKey" class="form-control form-control-lg"
-					   placeholder="Enter your farmer private key here" required type="password"/>
+					   placeholder="Enter your farmer public key here" required type="password"/>
 				<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 			</div>
 			<div class="mb-3">
