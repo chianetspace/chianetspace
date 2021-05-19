@@ -15,28 +15,28 @@
 					and growth of chia proof of space blockchain netspace.</p>
 				<div class="row justify-content-center mt-5">
 					<div class="col">
-						<a href="https://twitter.com/chia_project" target="_blank">
+						<a href="https://github.com/chianetspace/chianetspace" target="_blank">
 							<i class="bx display-6 bxl-github"></i>
 						</a>
 					</div>
 					<div class="col">
-						<a href="https://twitter.com/chia_project" target="_blank">
+						<a href="https://discord.gg/D6bRh8ZugX" target="_blank">
 							<i class="bx display-6 bxl-twitter"></i>
 						</a>
 					</div>
+					<!--					<div class="col">-->
+					<!--						<a href="https://www.facebook.com/ChiaProject" target="_blank">-->
+					<!--							<i class="bx display-6 bxl-facebook"></i>-->
+					<!--						</a>-->
+					<!--					</div>-->
+					<!--					<div class="col">-->
+					<!--						<a href="https://instagram.com/chia_project" target="_blank">-->
+					<!--							<i class="bx display-6 bxl-instagram"></i>-->
+					<!--						</a>-->
+					<!--					</div>-->
 					<div class="col">
-						<a href="https://www.facebook.com/ChiaProject" target="_blank">
-							<i class="bx display-6 bxl-facebook"></i>
-						</a>
-					</div>
-					<div class="col">
-						<a href="https://instagram.com/chia_project" target="_blank">
-							<i class="bx display-6 bxl-instagram"></i>
-						</a>
-					</div>
-					<div class="col">
-						<a href="https://medium.com/@chia.net" target="_blank">
-							<i class="bx display-6 bxl-medium"></i>
+						<a href="https://t.me/chianetspace" target="_blank">
+							<i class="bx display-6 bxl-telegram"></i>
 						</a>
 					</div>
 				</div>

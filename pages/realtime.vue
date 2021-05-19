@@ -1,5 +1,13 @@
 <template>
 	<div>
+		<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+			<div id="popup" class="toast fade" role="alert">
+				<div class="toast-body text-dark">
+					<h6>🎉 Order Plots Now</h6>
+					<p class="mb-0">Now you can order plots directly on our website.</p>
+				</div>
+			</div>
+		</div>
 		<div class="container text-center">
 			<h1 class="display-4">
 				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
@@ -104,6 +112,7 @@ export default {
 	created() {
 		this.init();
 		setInterval(() => this.init(), 77000);
+		setInterval(() => this.popup(), 15000);
 	},
 	computed: {
 		getHeight: function () {
@@ -123,6 +132,15 @@ export default {
 			this.$axios.$get('data/summary').then((data) => {
 				this.summary = data;
 			});
+		},
+		popup: function () {
+			if (process.client) {
+				let bootstrap = require('bootstrap');
+				let toast = document.getElementById('popup');
+				new bootstrap.Toast(toast, {
+					delay: 10000
+				}).show();
+			}
 		}
 	}
 }

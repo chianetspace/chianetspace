@@ -17,7 +17,7 @@
 					<li class="nav-item text-lg-start text-center d-none d-xl-block d-md-none d-sm-none">
 						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/">
 							<i class="bx bxs-dashboard me-1"></i>
-							Overview
+							Home
 						</NuxtLink>
 					</li>
 					<li class="nav-item text-lg-start text-center">
@@ -32,24 +32,24 @@
 							Stats
 						</NuxtLink>
 					</li>
-					<!--					<li class="nav-item text-lg-start text-center">-->
-					<!--						<NuxtLink class="nav-link px-0" to="/dashboard/plots">-->
-					<!--							<i class="bx bxs-cube me-1"></i>-->
-					<!--							Plots-->
-					<!--						</NuxtLink>-->
-					<!--					</li>-->
+					<li class="nav-item text-lg-start text-center">
+						<NuxtLink class="nav-link px-0" to="/pricing">
+							<i class="bx bxs-cart me-1"></i>
+							Order Plots
+						</NuxtLink>
+					</li>
 					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-1" to="/dashboard/pool">
 							<i class="bx bxs-server me-1"></i>
 							Pool
 						</NuxtLink>
 					</li>
-					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/frequently-asked-questions">
-							<i class="bx bxs-book-content me-1"></i>
-							FAQ
-						</NuxtLink>
-					</li>
+					<!--					<li class="nav-item text-lg-start text-center">-->
+					<!--						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/frequently-asked-questions">-->
+					<!--							<i class="bx bxs-book-content me-1"></i>-->
+					<!--							FAQ-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
 					<li class="nav-item text-lg-start text-center">
 						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/about">
 							<i class="bx bxs-info-circle me-1"></i>
