@@ -32,7 +32,7 @@
 			</div>
 			<div class="mb-3">
 				<label class="form-label fw-bold" for="plotnumber">Plots Number: {{ model.plotsCount }}</label>
-				<input id="plotnumber" v-model="model.plotsCount" class="form-range" max="500" min="1" type="range">
+				<input id="plotnumber" v-model="model.plotsCount" class="form-range" max="210" min="1" type="range">
 			</div>
 			<p>Order Amount: ${{ totalAmount() }}</p>
 			<button class="btn btn-secondary" type="reset">Clear</button>
@@ -65,6 +65,18 @@ export default {
 				farmerPrivateKey: '',
 				poolPrivateKey: '',
 				plotsCount: 1
+			}
+		}
+	},
+	created() {
+		if (process.browser) {
+			try {
+				window.$crisp.push(["do", "chat:open"]);
+				if (localStorage.getItem("shown") === null) {
+					window.$crisp.push(["do", "message:show", ["text", "If you need any help for order, we are there!"]])
+					localStorage.setItem("shown", "true");
+				}
+			} catch {
 			}
 		}
 	},
