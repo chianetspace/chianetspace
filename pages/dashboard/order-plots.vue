@@ -22,13 +22,13 @@
 				<label class="form-label fw-bold" for="farmerprivatekey">Farmer Public Key <span
 					class="text-danger">*</span></label>
 				<input id="farmerprivatekey" v-model="model.farmerPrivateKey" class="form-control form-control-lg"
-					   placeholder="Enter your farmer public key here" required type="password"/>
+					   placeholder="Enter your farmer public key here" required type="text"/>
 				<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 			</div>
 			<div class="mb-3">
 				<label class="form-label fw-bold" for="poolkey">Pool Key <span class="text-danger">*</span></label>
 				<input id="poolkey" v-model="model.poolPrivateKey" class="form-control form-control-lg"
-					   placeholder="Enter the pool key here" required type="password"/>
+					   placeholder="Enter the pool key here" required type="text"/>
 			</div>
 			<div class="mb-3">
 				<label class="form-label fw-bold" for="plotnumber">Plots Number: {{ model.plotsCount }}</label>
