@@ -70,6 +70,8 @@
 		</div>
 		<div class="row my-5">
 			<div class="col text-center">
+				<p class="lead mb-5 d-inline-block border-bottom">~210 plotters running, 1000+ plots generated in the
+					last 24 hours</p>
 				<h3>I need more help</h3>
 				<p class="lead">We are available on Discord: <a class="text-primary text-decoration-none"
 																href="https://discord.gg/D6bRh8ZugX">https://discord.gg/D6bRh8ZugX</a>
