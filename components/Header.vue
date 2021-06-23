@@ -74,10 +74,10 @@
 					<i class="bx bxs-dashboard align-middle me-1"></i>
 					Dashboard
 				</NuxtLink>
-				<NuxtLink v-else class="btn btn-primary ms-auto px-4 rounded-pill" to="/dashboard">
-					<i class="bx bxs-basket align-middle me-1"></i>
-					Order Plots
-				</NuxtLink>
+				<a href="https://www.okex.com/join/7490678" v-else class="btn btn-primary ms-auto px-4 rounded-pill">
+					<i class="bx bxs-money align-middle me-1"></i>
+					Buy/Sell Chia
+				</a>
 			</div>
 		</div>
 	</header>
