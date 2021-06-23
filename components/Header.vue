@@ -75,7 +75,7 @@
 					Dashboard
 				</NuxtLink>
 				<a href="https://www.okex.com/join/7490678" v-else class="btn btn-primary ms-auto px-4 rounded-pill">
-					<i class="bx bxs-money align-middle me-1"></i>
+					<i class="bx bx-money align-middle me-1"></i>
 					Buy/Sell Chia
 				</a>
 			</div>
