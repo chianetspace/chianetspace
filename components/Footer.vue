@@ -6,7 +6,7 @@
 					<p class="mb-0">Copyright &copy; {{ new Date().getFullYear() }} ChiaNetSpace.com - Crafted with ❤️
 						by Ug &amp; ApexDev &amp; Clint.network -
 						<i class="bx bxl-github ms-1"></i>
-						Fork me on <a class="text-inherit" href="https://github.com/chianetspace/chianetspace"
+						Fork me on <a class="text-primary" href="https://github.com/chianetspace/chianetspace"
 									  target="_blank">GitHub</a>
 					</p>
 				</div>

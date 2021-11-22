@@ -35,10 +35,10 @@
 					<i class="bx bxs-dashboard align-middle me-1"></i>
 					Dashboard
 				</NuxtLink>
-				<NuxtLink v-else class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill" to="/dashboard">
-					<i class="bx bxs-basket align-middle me-1"></i>
-					Order Plots Now
-				</NuxtLink>
+				<a href="https://www.okex.com/join/7490678" v-else class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill">
+					<i class="bx bx-money align-middle me-1"></i>
+					Buy/Sell Chia
+				</a>
 				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
 					<i class="bx bxl-discord"></i>
 					Join Discord
