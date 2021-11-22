@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<Ads/>
 		<NewsletterModal/>
 		<div id="layout-wrapper" :class="'d-flex flex-column vh-100 ' + (this.blurred ? 'blurred' : '')">
 			<Header :shadow="this.shadow"/>
@@ -30,17 +31,17 @@ export default {
 		}
 	},
 	mounted() {
-		if (process.browser) {
-			window.$crisp = [];
-			window.CRISP_WEBSITE_ID = "bbe3eee7-878d-4c36-8912-cde8da9117f1";
-			(function () {
-				let d = document;
-				let s = d.createElement("script");
-				s.src = "https://client.crisp.chat/l.js";
-				s.async = 1;
-				d.getElementsByTagName("head")[0].appendChild(s);
-			})();
-		}
+		// if (process.browser) {
+		// 	window.$crisp = [];
+		// 	window.CRISP_WEBSITE_ID = "bbe3eee7-878d-4c36-8912-cde8da9117f1";
+		// 	(function () {
+		// 		let d = document;
+		// 		let s = d.createElement("script");
+		// 		s.src = "https://client.crisp.chat/l.js";
+		// 		s.async = 1;
+		// 		d.getElementsByTagName("head")[0].appendChild(s);
+		// 	})();
+		// }
 
 		window.dataLayer = window.dataLayer || [];
 
