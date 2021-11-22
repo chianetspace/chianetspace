@@ -32,18 +32,18 @@
 							Stats
 						</NuxtLink>
 					</li>
-					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-0" to="/pricing">
-							<i class="bx bxs-cart me-1"></i>
-							Order Plots
-						</NuxtLink>
-					</li>
-					<li class="nav-item text-lg-start text-center">
-						<NuxtLink class="nav-link px-1" to="/dashboard/pool">
-							<i class="bx bxs-server me-1"></i>
-							Pool
-						</NuxtLink>
-					</li>
+					<!--					<li class="nav-item text-lg-start text-center">-->
+					<!--						<NuxtLink class="nav-link px-0" to="/pricing">-->
+					<!--							<i class="bx bxs-cart me-1"></i>-->
+					<!--							Order Plots-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
+					<!--					<li class="nav-item text-lg-start text-center">-->
+					<!--						<NuxtLink class="nav-link px-1" to="/dashboard/pool">-->
+					<!--							<i class="bx bxs-server me-1"></i>-->
+					<!--							Pool-->
+					<!--						</NuxtLink>-->
+					<!--					</li>-->
 					<!--					<li class="nav-item text-lg-start text-center">-->
 					<!--						<NuxtLink class="nav-link px-1" exact-active-class="active" to="/frequently-asked-questions">-->
 					<!--							<i class="bx bxs-book-content me-1"></i>-->
