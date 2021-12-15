@@ -26,7 +26,7 @@
 				Dive into statistics and graphs of Chia (XCH) Proof of Space
 				and<br />Time historical netspace and price data.
 			</p>
-			<h3 class="mt-4 mb-1">Chia Net Space Now:</h3>
+			<h3 class="mt-4 mb-1">Chia NetSpace Now:</h3>
 			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
 				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0)
