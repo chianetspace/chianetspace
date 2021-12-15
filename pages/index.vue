@@ -1,25 +1,52 @@
 <template>
 	<div>
-		<apexchart id="apexchart" :height="getHeight" :options="chartOptions" :series="series"
-				   class="position-fixed d-flex align-items-end bottom-0 start-0 end-0 w-100" type="area"></apexchart>
+		<apexchart
+			id="apexchart"
+			:height="getHeight"
+			:options="chartOptions"
+			:series="series"
+			class="
+				position-fixed
+				d-flex
+				align-items-end
+				bottom-0
+				start-0
+				end-0
+				w-100
+			"
+			type="area"
+		></apexchart>
 		<div class="container text-center pb-5">
 			<h1 class="display-4">
-				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span>.com</span>
+				Welcome to <strong class="fw-bold">Chia</strong>NetSpace<span
+					>.com</span
+				>
 			</h1>
 			<p class="lead text-center">
-				Dive into statistics and graphs of Chia (XCH) Proof of Space and<br/>Time historical netspace and
-				price data.
+				Dive into statistics and graphs of Chia (XCH) Proof of Space
+				and<br />Time historical netspace and price data.
 			</p>
 			<h3 class="mt-4 mb-1">Chia Net Space Now:</h3>
 			<!--			{{ summary }}-->
 			<h2 class="display-1 mb-0 text-success fw-bold">
-				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0) }}<sub>.<span
-				v-anime="{textContent: [0, getDecimals(summary.netSpace.largestWholeNumberBinaryValue)],
-				round: 1,
-				easing: 'linear',
-				// duration: 2100,
-				round: 1,
-				}"></span></sub>
+				{{ summary.netSpace.largestWholeNumberBinaryValue.toFixed(0)
+				}}<sub
+					>.<span
+						v-anime="{
+							textContent: [
+								0,
+								getDecimals(
+									summary.netSpace
+										.largestWholeNumberBinaryValue
+								),
+							],
+							round: 1,
+							easing: 'linear',
+							// duration: 2100,
+							round: 1,
+						}"
+					></span
+				></sub>
 				{{ summary.netSpace.largestWholeNumberBinarySymbol }}
 				<!--				<sup class="text-white">+38%</sup>-->
 			</h2>
@@ -30,16 +57,40 @@
 				<!--					&lt;!&ndash;					<i class="bx bxs-paper-plane me-1"></i>&ndash;&gt;-->
 				<!--					&lt;!&ndash;					Get More Stats&ndash;&gt;-->
 				<!--				</NuxtLink>-->
-				<NuxtLink v-if="this.$auth.loggedIn" class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill"
-						  to="/dashboard">
+				<NuxtLink
+					v-if="this.$auth.loggedIn"
+					class="
+						btn btn-lg
+						mx-2
+						mb-lg-0 mb-3
+						px-4
+						btn-primary
+						rounded-pill
+					"
+					to="/dashboard"
+				>
 					<i class="bx bxs-dashboard align-middle me-1"></i>
 					Dashboard
 				</NuxtLink>
-				<a href="https://www.okex.com/join/7490678" v-else class="btn btn-lg mx-2 mb-lg-0 mb-3 px-4 btn-primary rounded-pill">
+				<a
+					href="https://www.okex.com/join/7490678"
+					v-else
+					class="
+						btn btn-lg
+						mx-2
+						mb-lg-0 mb-3
+						px-4
+						btn-primary
+						rounded-pill
+					"
+				>
 					<i class="bx bx-money align-middle me-1"></i>
 					Buy/Sell Chia
 				</a>
-				<a class="btn btn-lg mx-2 px-4 btn-white rounded-pill" href="https://discord.gg/D6bRh8ZugX">
+				<a
+					class="btn btn-lg mx-2 px-4 btn-white rounded-pill"
+					href="https://discord.gg/D6bRh8ZugX"
+				>
 					<i class="bx bxl-discord"></i>
 					Join Discord
 				</a>
@@ -50,52 +101,52 @@
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Daily High / Daily Low</h6>
 							{{
-								summary.dailyHigh.toLocaleString('en-US', {
-									style: 'currency',
-									currency: 'USD'
+								summary.dailyHigh.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
 								})
 							}}
 							/
 							{{
-								summary.dailyLow.toLocaleString('en-US', {
-									style: 'currency',
-									currency: 'USD'
+								summary.dailyLow.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
 								})
 							}}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Last Update</h6>
-							{{ $moment(summary.lastUpdateDate).format('LLL') }}
+							{{ $moment(summary.lastUpdateDate).format("LLL") }}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Power Consumption</h6>
-							≈ {{ (summary.netSpace.largestWholeNumberBinaryValue * 1.5).toFixed(0) }} kW
+							≈ * kW
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">All Time High</h6>
 							{{
-								summary.allTimeHigh.toLocaleString('en-US', {
-									style: 'currency',
-									currency: 'USD'
+								summary.allTimeHigh.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
 								})
 							}}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Chia (XCH) Price</h6>
 							{{
-								summary.chiaPrice.toLocaleString('en-US', {
-									style: 'currency',
-									currency: 'USD'
+								summary.chiaPrice.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
 								})
 							}}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Daily Volume</h6>
 							{{
-								summary.dailyVolume.toLocaleString('en-US', {
-									style: 'currency',
-									currency: 'USD',
-									minimumFractionDigits: 0
+								summary.dailyVolume.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
+									minimumFractionDigits: 0,
 								})
 							}}
 						</div>
@@ -118,21 +169,23 @@ export default {
 				dailyHigh: 0,
 				dailyLow: 0,
 				netSpace: {
-					largestWholeNumberBinarySymbol: '',
+					largestWholeNumberBinarySymbol: "",
 					largestWholeNumberBinaryValue: 0,
-					largestWholeNumberDecimalValue: 0
-				}
+					largestWholeNumberDecimalValue: 0,
+				},
 			},
-			series: [{
-				name: "Net Space Growth",
-				data: []
-			}],
+			series: [
+				{
+					name: "Net Space Growth",
+					data: [],
+				},
+			],
 			chartOptions: {
 				chart: {
-					type: 'area',
+					type: "area",
 					offsetY: 10,
 					zoom: {
-						enabled: false
+						enabled: false,
 					},
 					toolbar: {
 						show: false,
@@ -141,24 +194,24 @@ export default {
 				xaxis: {
 					floating: true,
 					axisTicks: {
-						show: false
+						show: false,
 					},
 					axisBorder: {
-						show: false
+						show: false,
 					},
 					crosshairs: {
-						show: false
+						show: false,
 					},
 					show: false,
 					tooltip: {
-						enabled: false
+						enabled: false,
 					},
 					labels: {
-						show: false
-					}
+						show: false,
+					},
 				},
 				yaxis: {
-					show: false
+					show: false,
 				},
 				grid: {
 					show: false,
@@ -166,15 +219,15 @@ export default {
 						top: 0,
 						right: 0,
 						bottom: 0,
-						left: 0
-					}
+						left: 0,
+					},
 				},
-				colors: ['rgba(37, 198, 135, 1)'],
+				colors: ["rgba(37, 198, 135, 1)"],
 				dataLabels: {
-					enabled: false
+					enabled: false,
 				},
 				stroke: {
-					curve: 'smooth',
+					curve: "smooth",
 					// lineCap: 'butt',
 					// colors: undefined,
 					width: 7,
@@ -183,24 +236,26 @@ export default {
 				markers: {
 					// size: 5,
 					strokeWidth: 0,
-				}
+				},
 			},
-		}
+		};
 	},
 	// async asyncData({$axios}) {
 	// 	const summary = await $axios.$get('data/summary')
 	// 	return {summary}
 	// },
 	created() {
-		this.$axios.$get('data/summary').then((data) => {
+		this.$axios.$get("data/summary").then((data) => {
 			this.summary = data;
-		})
+		});
 	},
 	mounted() {
-		this.$axios.$get('charts/net-space-growth').then((data) => {
-			this.series = [{
-				data: data
-			}];
+		this.$axios.$get("charts/net-space-growth").then((data) => {
+			this.series = [
+				{
+					data: data,
+				},
+			];
 			this.chartOptions.chart.height = 50;
 		});
 	},
@@ -210,15 +265,17 @@ export default {
 				return window.innerWidth < 992 ? 121 : 421;
 			}
 			return 421;
-		}
+		},
 	},
 	methods: {
 		getDecimals: function (largestWholeNumberDecimalValue) {
-			let decimals = Math.abs(largestWholeNumberDecimalValue) - Math.floor(largestWholeNumberDecimalValue);
+			let decimals =
+				Math.abs(largestWholeNumberDecimalValue) -
+				Math.floor(largestWholeNumberDecimalValue);
 			return parseInt(decimals.toString().substring(2, 5));
-		}
-	}
-}
+		},
+	},
+};
 </script>
 
 <style scoped>
@@ -226,7 +283,7 @@ export default {
 	z-index: -1;
 	user-select: none;
 	pointer-events: none;
-//height: 100px !important; //min-height: 100px !important;
+	//height: 100px !important; //min-height: 100px !important;
 }
 
 .display-1 {
