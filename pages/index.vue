@@ -99,6 +99,24 @@
 				<div class="col-lg-10 offset-lg-1">
 					<div class="row">
 						<div class="col-lg-4 col-6 text-center mb-4">
+							<h6 class="fw-bold"></h6>
+							
+						</div>
+						<div class="col-lg-4 col-6 text-center mb-4">
+							<h6 class="fw-bold">Daily Volume</h6>
+							{{
+								summary.dailyVolume.toLocaleString("en-US", {
+									style: "currency",
+									currency: "USD",
+									minimumFractionDigits: 0,
+								})
+							}}
+						</div>
+						<div class="col-lg-4 col-6 text-center mb-4">
+							<h6 class="fw-bold"></h6>
+							
+						</div>
+						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Daily High / Daily Low</h6>
 							{{
 								summary.dailyHigh.toLocaleString("en-US", {
@@ -115,23 +133,6 @@
 							}}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
-							<h6 class="fw-bold">Last Update</h6>
-							{{ $moment(summary.lastUpdateDate).format("LLL") }}
-						</div>
-						<div class="col-lg-4 col-6 text-center mb-4">
-							<h6 class="fw-bold">Power Consumption</h6>
-							≈ * kW
-						</div>
-						<div class="col-lg-4 col-6 text-center mb-4">
-							<h6 class="fw-bold">All Time High</h6>
-							{{
-								summary.allTimeHigh.toLocaleString("en-US", {
-									style: "currency",
-									currency: "USD",
-								})
-							}}
-						</div>
-						<div class="col-lg-4 col-6 text-center mb-4">
 							<h6 class="fw-bold">Chia (XCH) Price</h6>
 							{{
 								summary.chiaPrice.toLocaleString("en-US", {
@@ -141,12 +142,11 @@
 							}}
 						</div>
 						<div class="col-lg-4 col-6 text-center mb-4">
-							<h6 class="fw-bold">Daily Volume</h6>
+							<h6 class="fw-bold">All Time High</h6>
 							{{
-								summary.dailyVolume.toLocaleString("en-US", {
+								summary.allTimeHigh.toLocaleString("en-US", {
 									style: "currency",
 									currency: "USD",
-									minimumFractionDigits: 0,
 								})
 							}}
 						</div>
